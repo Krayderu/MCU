@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: ProjectManagerDatas
   m_EditorClassIdentifier: 
   helpBoxEditor: 0
-  currentDatasProjectFolder: Demo
+  currentDatasProjectFolder: Troubles Ahead
   int_CurrentDatasProjectFolder: 0
   int_CurrentDatasSaveSystem: 1
-  s_newProjectName: Name
+  s_newProjectName: Troubles Ahead
   languageList:
   - Default
-  s_newLanguageName: French
+  s_newLanguageName: English
   firstSceneBuildInIndex: 1
   buildinList:
   - 01_DefaultScene
   - 00_MainMenu
-  newSceneName: Level
+  newSceneName: Level 1
   specificChar: \
