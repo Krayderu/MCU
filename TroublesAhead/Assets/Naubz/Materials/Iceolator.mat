@@ -224,7 +224,7 @@ Material:
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
     - _Light: 2
-    - _LightBands: 4
+    - _LightBands: 3
     - _LightBandsScale: 0.483
     - _LightThreshold: 0.611
     - _LightTransmission: 0
