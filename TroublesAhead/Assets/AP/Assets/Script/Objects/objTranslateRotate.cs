@@ -282,6 +282,21 @@ public class objTranslateRotate : MonoBehaviour {
 
 	}
 
+    public void MoveObjectOnTimer()
+    {
+        if (b_objStateOpen)
+        {
+            //Reset Timer
+            return;
+        }
+        else
+        {
+            MoveObject();
+            //Timer, coroutine
+            //MoveObject Again
+        }
+    }
+
     private void deactivateInteractiveUIButtons(){
         if ((!b_FocusMode_Desktop && ingameGlobalManager.instance.b_DesktopInputs               // Focus camera deactivate for desktop
             || !b_FocusMode_Mobile && !ingameGlobalManager.instance.b_DesktopInputs)            // Focus camera deactivate for mobile
