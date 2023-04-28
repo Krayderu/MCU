@@ -16,6 +16,7 @@ public class objTranslateRotate : MonoBehaviour {
 
 	public List<bool> 	 	constraintsAxisPosition = new List<bool>{true,true,true};
 	public List<bool>  		constraintsAxisRotation = new List<bool>{true,false,true};
+    public float            maxTime;
 
 
 	//--> Audio Part
@@ -282,19 +283,28 @@ public class objTranslateRotate : MonoBehaviour {
 
 	}
 
-    public void MoveObjectOnTimer()
+    public void MoveObjectOnTimer(float maxTime)
     {
         if (b_objStateOpen)
         {
-            //Reset Timer
+            StopCoroutine(CloseAfterTime(maxTime));
+            Debug.Log("coroutine stopped");
+            StartCoroutine(CloseAfterTime(maxTime));
+            Debug.Log("coroutine restarted");
             return;
         }
         else
         {
             MoveObject();
-            //Timer, coroutine
-            //MoveObject Again
+            StartCoroutine(CloseAfterTime(maxTime));
         }
+    }
+
+    private IEnumerator CloseAfterTime(float maxTime)
+    { 
+        yield return new WaitForSeconds(maxTime);
+        MoveObject();
+        yield return null;
     }
 
     private void deactivateInteractiveUIButtons(){
