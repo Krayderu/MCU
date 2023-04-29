@@ -8,21 +8,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Camtar_Cabine
-  m_Shader: {fileID: 4800000, guid: 371dee73dabc89140878360402049bfc, type: 3}
+  m_Shader: {fileID: 4800000, guid: 418a1adfe2e75f34da8aaf192ff8e296, type: 3}
   m_ValidKeywords:
   - _MK_ALBEDO_MAP
   - _MK_ARTISTIC_ANIMATION_STUTTER
-  - _MK_DETAIL_BLEND_MIX
-  - _MK_ENVIRONMENT_REFLECTIONS_ADVANCED
-  - _MK_FRESNEL_HIGHLIGHTS
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
   - _MK_LIGHT_BANDED
-  - _MK_OUTLINE_NOISE
   - _MK_SPECULAR_ISOTROPIC
   - _MK_VERTEX_ANIMATION_SINE
   - _MK_VERTEX_ANIMATION_STUTTER
   - _MK_WRAPPED_DIFFUSE
   m_InvalidKeywords:
   - _FRESNELHIGHLIGHTS_ON
+  - _MK_DETAIL_BLEND_MIX
+  - _MK_FRESNEL_HIGHLIGHTS
+  - _MK_OUTLINE_NOISE
   - _MK_RECEIVE_SHADOWS
   - _RECEIVESHADOWS_ON
   - _VERTEXANIMATIONSTUTTER_ON
@@ -209,7 +209,7 @@ Material:
     - _DrawnClampMin: 0
     - _DrawnMapScale: 1
     - _DstBlend: 0
-    - _EnvironmentReflections: 2
+    - _EnvironmentReflections: 1
     - _FresnelHighlights: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
