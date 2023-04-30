@@ -190,7 +190,6 @@ public class actionsWhenPuzzleIsSolved : MonoBehaviour {
         }
 
         // Dezoom
-
         ingameGlobalManager.instance._backInputs.ExitFocusMode();
 
     }

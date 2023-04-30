@@ -35,10 +35,10 @@ public class conditionsToAccessThePuzzle : MonoBehaviour {
         public int uniqueID = 0;    // entry Unique ID
     }
 
-    public List<idList>     inventoryIDList = new List<idList>() { new idList() };     // Lock Section : Check if an Object is in the player inventory using his ID
+    public List<idList>     inventoryIDList = new List<idList>() { new idList() };     // Lock Section : Check if an Object is in the player inventory using its ID
 
     public bool             b_feedbackActivated = false;                               // Lock Section : if true text is displayed
-    public List<idList>     feedbackIDList = new List<idList>() { new idList() };      // Lock Section : Check if an Object is in the player inventory using his ID
+    public List<idList>     feedbackIDList = new List<idList>() { new idList() };      // Lock Section : Check if an Object is in the player inventory using its ID
 
     public bool b_ActivateDoubleTapIcon = true;    // True : ACtivated the double tap UI icon if game is played on mobile platform
 
@@ -192,8 +192,6 @@ public class conditionsToAccessThePuzzle : MonoBehaviour {
             DeactivateObjectInTheInvenetoryViewer();
             b_PuzzleIsActivated = true;
 
-
-
         }
         else if ((!checkIfNeededObjectAreInTheInventory()                      // Objects needed are not available in the inventory
              || !callMethods.Call_A_Method_Only_Boolean(methodsList) )    // A custom method return false     
@@ -260,10 +258,7 @@ public class conditionsToAccessThePuzzle : MonoBehaviour {
             }
         }
 
-        if(counter == inventoryIDList.Count)
-            return true;
-        else
-            return false;
+        return counter == inventoryIDList.Count;
     }
 
     private void DeactivateObjectInTheInvenetoryViewer(){
