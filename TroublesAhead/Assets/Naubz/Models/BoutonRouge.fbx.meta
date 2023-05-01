@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 787dc55211a97464c928feee50d7c858
+guid: 19f743e3727a35647897a3a0a0236d27
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,23 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Caissier_Base
-    second: {fileID: 2100000, guid: dc7b748ee72bf7e41b58ee95ec0ae2d1, type: 2}
+      name: BoutonRouge_Base
+    second: {fileID: 2100000, guid: 056a44a90ee84764a819a3cff9460f38, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Caissier_Glass
-    second: {fileID: 2100000, guid: 8cffe86aa5e7e0240b15f431d2189462, type: 2}
+      name: BoutonRouge_Glass
+    second: {fileID: 2100000, guid: 73a770165d2de6540870b8b8eb8f5cf4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Caissier_Phone_Base
-    second: {fileID: 2100000, guid: dede109ab344dcb4ba0c354afd658879, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tabouret_Base
-    second: {fileID: 2100000, guid: 86848c43395e7a2479e753771212e6d8, type: 2}
+      name: Default_Material
+    second: {fileID: 2100000, guid: 73a770165d2de6540870b8b8eb8f5cf4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -55,7 +50,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 20
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -108,7 +103,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
