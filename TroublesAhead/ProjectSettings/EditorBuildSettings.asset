@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AP/Assets/Scenes/Troubles Ahead/00_MainMenu.unity
-    guid: 8ba748cc3ae734b49b717c275d892184
+    path: Assets/AP/Assets/Scenes/Test/00_MainMenu.unity
+    guid: 8ae5edf24d8200f4bab1edf1196dfc9a
   - enabled: 1
-    path: Assets/AP/Assets/Scenes/Troubles Ahead/01_DefaultScene.unity
-    guid: 11649e2beeb9c1541b54b39f19d41ef5
+    path: Assets/AP/Assets/Scenes/Test/01_DefaultScene.unity
+    guid: 6a727ab8d2332f44d8ddbb860ce673bf
   m_configObjects: {}
