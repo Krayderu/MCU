@@ -197,7 +197,7 @@ Material:
     - _AdvancedTab: 1
     - _AlbedoMapIntensity: 1
     - _AlphaClipping: 0
-    - _AlphaCutoff: 0.397
+    - _AlphaCutoff: 0.69
     - _Anisotropy: 0
     - _Artistic: 0
     - _ArtisticFrequency: 1
@@ -211,7 +211,7 @@ Material:
     - _BumpScale: 1
     - _ColorGrading: 0
     - _Contrast: 1
-    - _Cutoff: 0.397
+    - _Cutoff: 0.69
     - _DetailBlend: 0
     - _DetailMix: 0.5
     - _DetailNormalMapIntensity: 1

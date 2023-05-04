@@ -3,7 +3,27 @@ guid: 755fe91f4c2022c49a52dc99e3ecca49
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Camtar_Cabine
+    second: {fileID: 2100000, guid: dfb9059696ea41542a1346a7dd8daa8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Camtar_Chenilles
+    second: {fileID: 2100000, guid: 777b8c3ace8c601498e3503f3704955f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Camtar_Parbrise
+    second: {fileID: 2100000, guid: fad69e727deaccd43bb12f7c08cfc16e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Camtar_Stock
+    second: {fileID: 2100000, guid: 48afe5f4ff1596549847acc65cb77518, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1.25
+    globalScale: 125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

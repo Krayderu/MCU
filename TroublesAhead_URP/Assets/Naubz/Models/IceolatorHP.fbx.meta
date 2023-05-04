@@ -3,7 +3,17 @@ guid: 1b21e6f363d4a0a4eb665e5ab73dcb85
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iceolator_Base
+    second: {fileID: 2100000, guid: c6c0cb03d419c9246ab8f8eb37dcbee8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iceolator_Glass
+    second: {fileID: 2100000, guid: 76fb067c7f9b2c4418000263aa021cd8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +98,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
