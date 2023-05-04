@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: Bonjour
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
+    PortName: Next
+    TargetNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
+  - BaseNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
+    PortName: a
+    TargetNodeGUID: 2a36f3cb-e817-4c02-b2a8-b4efb43de819
+  - BaseNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
+    PortName: b
+    TargetNodeGUID: 91b79711-1e04-49e8-964d-d38b70ef044c
+  DialogueNodeData:
+  - NodeGUID: 2a36f3cb-e817-4c02-b2a8-b4efb43de819
+    DialogueText: Vous avez choisi l'option A
+    Position: {x: 561, y: 268}
+  - NodeGUID: 91b79711-1e04-49e8-964d-d38b70ef044c
+    DialogueText: Vous avez choisi l'option B
+    Position: {x: 561, y: 86}
+  - NodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
+    DialogueText: Bonjour !
+    Position: {x: 246, y: 208}
+  ExposedProperties: []
+  CommentBlockData: []
