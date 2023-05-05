@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 4258cd6fcd9df534db219a15d3ef99ab
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRWallNorth
+    second: {fileID: 2100000, guid: a4f0238a4229f904a91b6efe6fca9d1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BR_Roof1
+    second: {fileID: 2100000, guid: 5cd56303222ec084bbaa0687d3ab8ea7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BR_Wall_East1
+    second: {fileID: 2100000, guid: 5fa011ddca53d554e9c2bc49cff6f648, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BR_Wall_West1
+    second: {fileID: 2100000, guid: a3e92c654d802c54291be3c2656d1534, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Door_East_Base
+    second: {fileID: 2100000, guid: 69e930babf6650d4f9f8293ca40b7635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Door_East_Glass
+    second: {fileID: 2100000, guid: 1f4b1b7a91191ea4b9afeef2d0ab6b9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Door_West_Base
+    second: {fileID: 2100000, guid: 1e62512d80aedd34ebfd70e4616e1e4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Door_West_Glass
+    second: {fileID: 2100000, guid: b47fe82a193beda4e90a11fedaa1fd65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Floor1
+    second: {fileID: 2100000, guid: 2e5c51dd93d1d2b47a2e75007ae3d54a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Roof1
+    second: {fileID: 2100000, guid: 8f81458d3c1d0fb40b70b3458e9bc167, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Wall_East1
+    second: {fileID: 2100000, guid: 7c5c74a40f1d54241a7f55386be73129, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Wall_North1
+    second: {fileID: 2100000, guid: 197de10a1be18e54383b1aedb1e26c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Wall_South1
+    second: {fileID: 2100000, guid: 204fa95330ca1064f8d019f47f619c29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Wall_West1
+    second: {fileID: 2100000, guid: e5edb2e9b8e3a5c4c8f4242d044665eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oil_Roof_Base1
+    second: {fileID: 2100000, guid: 151e3831c4b14ce4abfaf1a86feccd39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oil_Roof_Up1
+    second: {fileID: 2100000, guid: 1ceea881971dadd4e9fa509f99676255, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_East1
+    second: {fileID: 2100000, guid: 54cb02ddb45549642850f29cc48d8333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Middle1
+    second: {fileID: 2100000, guid: 46e91a5d016ff2e459eeba3dce9645fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Short_East1
+    second: {fileID: 2100000, guid: fd369f5ae53ac814b92053897a013677, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Short_West1
+    second: {fileID: 2100000, guid: fadd721f704dd344e9a5734f1ef89be2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_West1
+    second: {fileID: 2100000, guid: 5f9606f069ff02444beff6bb88e148f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remise_Roof1
+    second: {fileID: 2100000, guid: e1413a3ca1b8afa439a360e267417115, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remise_Wall_East1
+    second: {fileID: 2100000, guid: b6ba9bcf07b7a6248a3ade04202520cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remise_Wall_North1
+    second: {fileID: 2100000, guid: a9364fd1a822c3947905d40854c5a0f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Remise_Wall_South1
+    second: {fileID: 2100000, guid: ec417db26f9f6974a9f4a3841d714439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sensor_Base1
+    second: {fileID: 2100000, guid: 33d0ba6da456abd478fcdb61eef5e7c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WC_Wall_East1
+    second: {fileID: 2100000, guid: 8fdbb2c46a5435848be421c9215e5944, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WC_Wall_North1
+    second: {fileID: 2100000, guid: 16708ff3a0b9ad14d8caa4b2e664a241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Big_SouthEast1
+    second: {fileID: 2100000, guid: 704ca4d92c964c34ea9e7ebf774f4cfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Big_SouthWest1
+    second: {fileID: 2100000, guid: 04615923ac56b5b48bc81a1439c70b03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Big_West1
+    second: {fileID: 2100000, guid: 0e98a5ba5cef77c40bf10d790e27f3d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Small_West1
+    second: {fileID: 2100000, guid: 1546f4bb253da65488453286094362cb, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 100
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
