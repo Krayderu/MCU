@@ -48,18 +48,18 @@ Material:
     - RGB_STRIPES: 1
     - SCROLL_STATIC: 1
     - STATIC: 1
-    - Vector1_1BFF6B46: 85.5
+    - Vector1_1BFF6B46: 140.61
     - Vector1_5660967D: 2.2
     - Vector1_63AA1B2A: 0.2
     - Vector1_96113905: 100
     - Vector1_DF019693: 0.5
     - WOBBLE: 0
-    - _DistortionStrength: 0.1
+    - _DistortionStrength: 0.04
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScanlineHeight: 8.4
-    - _ScanlineStrength: 0.43
-    - _StaticStrength: 0.25
+    - _ScanlineHeight: 50.29
+    - _ScanlineStrength: 0.1
+    - _StaticStrength: 0.2
     m_Colors:
     - _CRTWarpStrength: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
