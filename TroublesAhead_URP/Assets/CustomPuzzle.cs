@@ -8,6 +8,7 @@ public class CustomPuzzle : MonoBehaviour
     private actionsWhenPuzzleIsSolved actions;
     private AP_Generic thing;
     public GameObject iconPosition;
+    public bool b_UsePuzzleFocus = true;
     //public bool b_PuzzleSolved = false;         // Know if the puzzle is solved
 
     private void Start()
