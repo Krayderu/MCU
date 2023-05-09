@@ -112,6 +112,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Remise_Floor1
+    second: {fileID: 2100000, guid: 5fcfd18b47e154846bec2434a0b96548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Remise_Roof1
     second: {fileID: 2100000, guid: e1413a3ca1b8afa439a360e267417115, type: 2}
   - first:
