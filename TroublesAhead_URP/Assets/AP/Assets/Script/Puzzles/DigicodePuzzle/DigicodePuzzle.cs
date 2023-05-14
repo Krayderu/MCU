@@ -300,6 +300,7 @@ public class DigicodePuzzle : MonoBehaviour {
 //--> The Puzzle Behaviour
     private void PuzzleBehaviour()
     {
+        Debug.Log(camManager.movementState);
         Vector3 cursorPosition = Input.mousePosition;
 
         if (!b_PuzzleSolved)

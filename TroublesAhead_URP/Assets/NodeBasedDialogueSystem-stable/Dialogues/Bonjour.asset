@@ -17,20 +17,20 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
   - BaseNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
-    PortName: a
+    PortName: b
     TargetNodeGUID: 2a36f3cb-e817-4c02-b2a8-b4efb43de819
   - BaseNodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
-    PortName: b
+    PortName: a
     TargetNodeGUID: 91b79711-1e04-49e8-964d-d38b70ef044c
   DialogueNodeData:
   - NodeGUID: 2a36f3cb-e817-4c02-b2a8-b4efb43de819
     DialogueText: Vous avez choisi l'option A
-    Position: {x: 561, y: 268}
+    Position: {x: 323, y: 262}
   - NodeGUID: 91b79711-1e04-49e8-964d-d38b70ef044c
     DialogueText: Vous avez choisi l'option B
-    Position: {x: 561, y: 86}
+    Position: {x: 323, y: 152}
   - NodeGUID: 12202d8f-71f4-4d7d-b53d-c33295d5333d
     DialogueText: Bonjour !
-    Position: {x: 246, y: 208}
+    Position: {x: 100, y: 286}
   ExposedProperties: []
   CommentBlockData: []

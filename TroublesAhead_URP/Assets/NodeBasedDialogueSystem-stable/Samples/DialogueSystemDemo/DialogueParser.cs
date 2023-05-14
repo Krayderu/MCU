@@ -21,6 +21,23 @@ namespace Subtegral.DialogueSystem.Runtime
             var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
             ProceedToNarrative(narrativeData.TargetNodeGUID);
         }
+        private void OnEnable()
+        {
+            dialogueText.transform.parent.gameObject.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            dialogueText.transform.parent.gameObject.SetActive(false);
+        }
+        public void StartDialogue(DialogueContainer newDialogue)
+        {
+
+
+            dialogue = newDialogue;
+            var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
+            ProceedToNarrative(narrativeData.TargetNodeGUID);
+        }
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {

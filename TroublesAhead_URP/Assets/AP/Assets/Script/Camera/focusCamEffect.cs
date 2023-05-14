@@ -148,7 +148,15 @@ public class focusCamEffect : MonoBehaviour {
             ingameGlobalManager.instance.currentPuzzle &&
             ingameGlobalManager.instance.currentPuzzle.gameObject.GetComponent<focusOnly>())
         {
-            ingameGlobalManager.instance.StartCoroutine(ingameGlobalManager.instance.changeLockStateConfined(false));
+            if (!ingameGlobalManager.instance.currentPuzzle.gameObject.GetComponent<focusOnly>().DialogueActivated)
+            {
+				ingameGlobalManager.instance.StartCoroutine(ingameGlobalManager.instance.changeLockStateConfined(false));
+			} 
+			else
+            {
+				ingameGlobalManager.instance.StartCoroutine(ingameGlobalManager.instance.changeLockStateConfined(true));
+			}
+            
         }
         //-> Activate the cursor and change lock state to confine.
         else

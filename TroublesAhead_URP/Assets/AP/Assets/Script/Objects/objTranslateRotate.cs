@@ -288,9 +288,9 @@ public class objTranslateRotate : MonoBehaviour {
         if (b_objStateOpen)
         {
             StopCoroutine(CloseAfterTime(maxTime));
-            Debug.Log("coroutine stopped");
+            //Debug.Log("coroutine stopped");
             StartCoroutine(CloseAfterTime(maxTime));
-            Debug.Log("coroutine restarted");
+            //Debug.Log("coroutine restarted");
             return;
         }
         else

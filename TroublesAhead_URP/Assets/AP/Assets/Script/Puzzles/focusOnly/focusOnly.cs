@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Subtegral.DialogueSystem.Runtime;
 
 public class focusOnly : MonoBehaviour {
     public bool                         SeeInspector = false;
@@ -13,7 +14,7 @@ public class focusOnly : MonoBehaviour {
     public focusCamEffect               camManager;                                 // access focusCamEffect component
     public conditionsToAccessThePuzzle  _conditionsToAccessThePuzzle;               // access conditionsToAccessThePuzzle component
     public actionsWhenPuzzleIsSolved    _actionsWhenPuzzleIsSolved;                 // access actionsWhenPuzzleIsSolved component
-
+    private DialogueParser DialogueEngine;
     public bool                         b_VoiceOverActivated = false;               // If true a voice over is played
     public bool                         alreadyPlayed = false;                      // Play the voice only one time
 
@@ -32,6 +33,8 @@ public class focusOnly : MonoBehaviour {
     public List<idList>                 diaryIDList = new List<idList>() { new idList() };         // Play a voice over using an ID
     private VoiceOver_Manager           voiceOverManager;                                          // reference to the voice over manager
 
+    public bool DialogueActivated = false;
+    public List<idList> DialogList = new List<idList>() { new idList() };
 
 
     public GameObject iconPosition;
@@ -41,6 +44,9 @@ public class focusOnly : MonoBehaviour {
         camManager      = GetComponent<focusCamEffect>();
         _conditionsToAccessThePuzzle    = GetComponent<conditionsToAccessThePuzzle>();
         _actionsWhenPuzzleIsSolved = GetComponent<actionsWhenPuzzleIsSolved>();
+        if (DialogueActivated) { DialogueEngine = GetComponent<DialogueParser>();
+            DialogueEngine.enabled = false;
+        }
 
         GameObject tmpObj = GameObject.Find("VoiceOver_Manager");
         tmpObj = GameObject.Find("VoiceOver_Manager");
@@ -76,7 +82,6 @@ public class focusOnly : MonoBehaviour {
                             true);
                     }
                 }
-
                 PuzzleBehaviour();
             }
             if (!iconPosition.activeInHierarchy && ingameGlobalManager.instance.currentPuzzle == null)
@@ -154,6 +159,15 @@ public class focusOnly : MonoBehaviour {
 //--> The Puzzle Behaviour
     private void PuzzleBehaviour()
     {
+        if (DialogueActivated && ingameGlobalManager.instance.b_focusModeIsActivated)
+        {
+            {
+                DialogueEngine.enabled = true;
+            }
+        }else if (DialogueActivated && !ingameGlobalManager.instance.b_focusModeIsActivated)
+        {
+            DialogueEngine.enabled = false;
+        }
     }
 
 

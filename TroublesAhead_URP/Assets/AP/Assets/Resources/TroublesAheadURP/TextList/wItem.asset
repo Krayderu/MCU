@@ -102,7 +102,7 @@ MonoBehaviour:
   currentLanguage: 0
   fisrtTextDisplayedInEditor: 2
   howManyEntryDisplayed: 50
-  selectedID: 2
+  selectedID: 1
   b_EditSubtitle: 0
   currentAudioSubtitleEdit: 0
   editorType: 1
