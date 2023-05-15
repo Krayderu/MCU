@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 66be6465217c2ee4982510354fa4d62d
+guid: 8ba591a104d0ac343a9d9de7793bb37a
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WCWallInside
-    second: {fileID: 2100000, guid: d66723f602052cf4596899376d5f6e0d, type: 2}
+      name: Croissant
+    second: {fileID: 2100000, guid: 0d4b7ba86c6ec6f4497a21d68dfb14f5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 20
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
