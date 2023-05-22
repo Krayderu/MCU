@@ -162,10 +162,12 @@ public class focusOnly : MonoBehaviour {
         if (DialogueActivated && ingameGlobalManager.instance.b_focusModeIsActivated)
         {
             {
+                Debug.Log("Dialogue activé");
                 DialogueEngine.enabled = true;
             }
         }else if (DialogueActivated && !ingameGlobalManager.instance.b_focusModeIsActivated)
         {
+            Debug.Log("Dialogue désactivé");
             DialogueEngine.enabled = false;
         }
     }
