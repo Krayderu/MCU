@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 430ee4299e71a5943aafc72e1c5f110d
+guid: d8cc8e71038f4ac4b9a6e0e6ed346162
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LayoutClopeBig
-    second: {fileID: 2100000, guid: 8ccfb8565d6d55a45bee734977531c24, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LayoutClopeSmall
-    second: {fileID: 2100000, guid: 5a1dba67d6662f94aa6e6b0e555aa703, type: 2}
+      name: lambert24
+    second: {fileID: 2100000, guid: 29eee4da94704624a8bbb56cd55bcacf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 30
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 30
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

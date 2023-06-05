@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 430ee4299e71a5943aafc72e1c5f110d
+guid: 146af4ac9700c104e84ec582ff884260
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LayoutClopeBig
-    second: {fileID: 2100000, guid: 8ccfb8565d6d55a45bee734977531c24, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LayoutClopeSmall
-    second: {fileID: 2100000, guid: 5a1dba67d6662f94aa6e6b0e555aa703, type: 2}
+      name: lambert38
+    second: {fileID: 2100000, guid: 31bfbc9550e603849829d5f3edbce9d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
