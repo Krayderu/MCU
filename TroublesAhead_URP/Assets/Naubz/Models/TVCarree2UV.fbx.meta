@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: f2d46463514fdc54eb9337b75a26f576
+guid: ac317d18082af4b48bd9de022545168b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Base
-    second: {fileID: 2100000, guid: 367159c0dad3e3f47902d6310b5efcd5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Glass
-    second: {fileID: 2100000, guid: 2498abeda2e0a1c49bad935d52c25dde, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

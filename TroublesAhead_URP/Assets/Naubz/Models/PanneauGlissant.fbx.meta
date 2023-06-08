@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: f2d46463514fdc54eb9337b75a26f576
+guid: 45e84f4c08e25c24faa147cd0c075a02
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Base
-    second: {fileID: 2100000, guid: 367159c0dad3e3f47902d6310b5efcd5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Glass
-    second: {fileID: 2100000, guid: 2498abeda2e0a1c49bad935d52c25dde, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 80
+    globalScale: 110
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.79999995
+    globalScale: 1.1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

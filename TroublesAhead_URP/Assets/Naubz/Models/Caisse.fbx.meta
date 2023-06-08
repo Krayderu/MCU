@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2d46463514fdc54eb9337b75a26f576
+guid: c61cbf68dd37f9744a8e4174dbce70d3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Base
-    second: {fileID: 2100000, guid: 367159c0dad3e3f47902d6310b5efcd5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CoffeeMachine_Glass
-    second: {fileID: 2100000, guid: 2498abeda2e0a1c49bad935d52c25dde, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: 94765cea37ba3ad44b8ea2a2be9a7b2d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 80
+    globalScale: 75
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.79999995
+    globalScale: 0.75
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
