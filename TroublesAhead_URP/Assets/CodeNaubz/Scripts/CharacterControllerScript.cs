@@ -12,11 +12,15 @@ public class CharacterControllerScript : MonoBehaviour
     private Rigidbody rb;
     private float rotationX = 0f;
     private bool isGrounded;
+    private Animator animator;
+    private Camera playerCamera;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        animator = GetComponent<Animator>();
+        playerCamera = Camera.main;
     }
 
     private void Update()
@@ -37,13 +41,19 @@ public class CharacterControllerScript : MonoBehaviour
             isGrounded = false;
         }
 
+        // Handle interaction
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            TryInteract();
+        }
+
         // Handle camera rotation
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         rotationX -= Input.GetAxis("Mouse Y") * mouseSensitivity;
         rotationX = Mathf.Clamp(rotationX, -90f, 90f);
 
         transform.Rotate(0f, mouseX, 0f);
-        Camera.main.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
+        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
     }
 
     private void FixedUpdate()
@@ -57,6 +67,19 @@ public class CharacterControllerScript : MonoBehaviour
         else
         {
             isGrounded = false;
+        }
+    }
+
+    private void TryInteract()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 2f))
+        {
+            InteractableObject interactableObject = hit.collider.GetComponent<InteractableObject>();
+            if (interactableObject != null)
+            {
+                interactableObject.TriggerAnimation();
+            }
         }
     }
 }
