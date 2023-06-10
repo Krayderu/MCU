@@ -8,12 +8,14 @@ public class CharacterControllerScript : MonoBehaviour
     public float mouseSensitivity = 2f;
     public float jumpForce = 5f;
     public LayerMask groundLayer;
+    public float interactDistance = 3f;
 
     private Rigidbody rb;
     private float rotationX = 0f;
     private bool isGrounded;
     private Animator animator;
     private Camera playerCamera;
+    private InteractObject focusedInteractable = null;
 
     private void Start()
     {
@@ -54,6 +56,33 @@ public class CharacterControllerScript : MonoBehaviour
 
         transform.Rotate(0f, mouseX, 0f);
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
+
+        // Cast a ray directly pointing out of the center of the screen
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactDistance))
+        {
+            // If we hit an interactable object
+            InteractObject interactable = hit.collider.GetComponent<InteractObject>();
+            if (interactable)
+            {
+                if (focusedInteractable == null)
+                {
+                    focusedInteractable = interactable;
+                    interactable.EnterFocus();
+                }
+
+            }
+            else if (interactable == null && focusedInteractable)
+            {
+                focusedInteractable.ExitFocus();
+                focusedInteractable = null;
+            }
+        }
+        else if (focusedInteractable)
+        {
+            focusedInteractable.ExitFocus();
+            focusedInteractable = null;
+        }
     }
 
     private void FixedUpdate()
@@ -75,10 +104,10 @@ public class CharacterControllerScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 2f))
         {
-            InteractableObject interactableObject = hit.collider.GetComponent<InteractableObject>();
-            if (interactableObject != null)
+            InteractObject interactObject = hit.collider.GetComponent<InteractObject>();
+            if (interactObject != null)
             {
-                interactableObject.TriggerAnimation();
+                interactObject.Interact();
             }
         }
     }

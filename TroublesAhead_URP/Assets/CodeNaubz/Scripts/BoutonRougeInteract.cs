@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableObject : MonoBehaviour
+public class BoutonRougeInteract : InteractObject
 {
     public Animator animator;
 
-    public void TriggerAnimation()
+    public override void Interact()
     {
+        base.Interact();
+
+
         if(animator.GetBool("Opening")==true)
         {
             animator.SetBool("Opening", false);
@@ -20,6 +23,6 @@ public class InteractableObject : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Animator Parameter Value: " + animator.GetBool("Opening"));
+        //Debug.Log("Animator Parameter Value: " + animator.GetBool("Opening"));
     }
 }
