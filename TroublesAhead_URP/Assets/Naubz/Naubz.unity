@@ -5843,7 +5843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e8c8d69ed7eeb046b9310cf14a08176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 8
   mouseSensitivity: 3
   jumpForce: 5
   groundLayer:
@@ -8012,7 +8012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0.8867924, g: 0.18169154, b: 0.04601282, a: 1}
-  outlineWidth: 30
+  outlineWidth: 20
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
