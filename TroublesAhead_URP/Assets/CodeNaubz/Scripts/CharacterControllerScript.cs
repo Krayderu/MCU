@@ -9,6 +9,7 @@ public class CharacterControllerScript : MonoBehaviour
     public float jumpForce = 5f;
     public LayerMask groundLayer;
     public float interactDistance = 3f;
+    public bool focusActif = false;
 
     private Rigidbody rb;
     private float rotationX = 0f;
@@ -27,21 +28,8 @@ public class CharacterControllerScript : MonoBehaviour
 
     private void Update()
     {
-        // Handle player movement
-        float horizontalInput = Input.GetKey(KeyCode.D) ? 1f : Input.GetKey(KeyCode.A) ? -1f : 0f;
-        float verticalInput = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f : 0f;
 
-        Vector3 movement = (transform.right * horizontalInput + transform.forward * verticalInput).normalized;
-        movement *= movementSpeed * Time.deltaTime;
-
-        rb.MovePosition(rb.position + movement);
-
-        // Handle jumping
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
-            isGrounded = false;
-        }
+        ObjectDetection();
 
         // Handle interaction
         if (Input.GetKeyDown(KeyCode.E))
@@ -49,40 +37,20 @@ public class CharacterControllerScript : MonoBehaviour
             TryInteract();
         }
 
-        // Handle camera rotation
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        rotationX -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
 
-        transform.Rotate(0f, mouseX, 0f);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
-
-        // Cast a ray directly pointing out of the center of the screen
-        RaycastHit hit;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactDistance))
+        if (!focusActif)
         {
-            // If we hit an interactable object
-            InteractObject interactable = hit.collider.GetComponent<InteractObject>();
-            if (interactable)
-            {
-                if (focusedInteractable == null)
-                {
-                    focusedInteractable = interactable;
-                    interactable.EnterFocus();
-                }
+            CameraRotation();
 
-            }
-            else if (interactable == null && focusedInteractable)
-            {
-                focusedInteractable.ExitFocus();
-                focusedInteractable = null;
-            }
+            Jump();
+
+            PlayerMovement();
+
+
         }
-        else if (focusedInteractable)
-        {
-            focusedInteractable.ExitFocus();
-            focusedInteractable = null;
-        }
+        
+
+
     }
 
     private void FixedUpdate()
@@ -109,6 +77,70 @@ public class CharacterControllerScript : MonoBehaviour
             {
                 interactObject.Interact();
             }
+        }
+    }
+
+    private void CameraRotation()
+    {
+        // Handle camera rotation
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        rotationX -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+
+        transform.Rotate(0f, mouseX, 0f);
+        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
+    }
+
+    private void Jump()
+    {
+        // Handle jumping
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
+            isGrounded = false;
+        }
+
+    }
+
+    private void PlayerMovement()
+    {
+        // Handle player movement
+        float horizontalInput = Input.GetKey(KeyCode.D) ? 1f : Input.GetKey(KeyCode.A) ? -1f : 0f;
+        float verticalInput = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f : 0f;
+
+        Vector3 movement = (transform.right * horizontalInput + transform.forward * verticalInput).normalized;
+        movement *= movementSpeed * Time.deltaTime;
+
+        rb.MovePosition(rb.position + movement);
+    }
+
+    private void ObjectDetection()
+    {
+        // Cast a ray directly pointing out of the center of the screen
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactDistance))
+        {
+            // If we hit an interactable object
+            InteractObject interactable = hit.collider.GetComponent<InteractObject>();
+            if (interactable)
+            {
+                if (focusedInteractable == null)
+                {
+                    focusedInteractable = interactable;
+                    interactable.EnterFocus();
+                }
+
+            }
+            else if (interactable == null && focusedInteractable)
+            {
+                focusedInteractable.ExitFocus();
+                focusedInteractable = null;
+            }
+        }
+        else if (focusedInteractable)
+        {
+            focusedInteractable.ExitFocus();
+            focusedInteractable = null;
         }
     }
 }

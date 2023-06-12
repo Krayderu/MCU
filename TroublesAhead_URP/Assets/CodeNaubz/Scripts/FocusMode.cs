@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class FocusMode : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Quaternion originalRotation;
+    private CharacterControllerScript characterControllerScript;
+
+    private void Start()
     {
-        
+        characterControllerScript = GetComponent<CharacterControllerScript>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EnableFocusMode()
     {
-        
+        // Disable camera rotation
+        characterControllerScript.focusActif = true;
+
+        // Unlock the cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void DisableFocusMode()
+    {
+        characterControllerScript.focusActif = false;
+
+        // Lock the cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
