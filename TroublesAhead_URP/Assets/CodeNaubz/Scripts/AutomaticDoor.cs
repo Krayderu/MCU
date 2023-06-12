@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class AutomaticDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public Animator animator;
+    public float maxTime = 6;
+
+
+    private void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            Debug.Log("entred");
+            animator.SetBool("isOpen", true);
+            StartCoroutine(CloseAfterTime(maxTime));
+        }
         
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator CloseAfterTime(float maxTime)
     {
-        
+        yield return new WaitForSeconds(maxTime);
+        animator.SetBool("isOpen", false);
+        yield return null;
     }
+
 }
