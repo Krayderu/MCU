@@ -6,9 +6,21 @@ public class BoutonRougeInteract : InteractObject
 {
     public Animator animator;
 
+    public override void Start()
+    {
+        base.Start();
+
+        FindPlayer();
+    }
+
     public override void Interact()
     {
         base.Interact();
+        if(playerController.step == 0)
+        {
+            playerController.step = 1;
+        }
+        
 
 
         if(animator.GetBool("Opening")==true)

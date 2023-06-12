@@ -5,6 +5,8 @@ using UnityEngine;
 public class InteractObject : MonoBehaviour
 {
     private Outline outline;
+    public GameObject player;
+    public CharacterControllerScript playerController;
 
     public virtual void Start()
     {
@@ -26,5 +28,13 @@ public class InteractObject : MonoBehaviour
     public void ExitFocus()
     {
         outline.enabled = false;
+    }
+
+    public CharacterControllerScript FindPlayer()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<CharacterControllerScript>();
+
+        return playerController;
     }
 }

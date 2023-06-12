@@ -11,10 +11,12 @@ public class CharacterControllerScript : MonoBehaviour
     public float interactDistance = 3f;
     public bool focusActif = false;
 
+    // Step for the Storyline
+    public int step = 0;
+
     private Rigidbody rb;
     private float rotationX = 0f;
     private bool isGrounded;
-    private Animator animator;
     private Camera playerCamera;
     private InteractObject focusedInteractable = null;
 
@@ -22,7 +24,6 @@ public class CharacterControllerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        animator = GetComponent<Animator>();
         playerCamera = Camera.main;
     }
 
@@ -46,11 +47,8 @@ public class CharacterControllerScript : MonoBehaviour
 
             PlayerMovement();
 
-
         }
         
-
-
     }
 
     private void FixedUpdate()
@@ -70,7 +68,7 @@ public class CharacterControllerScript : MonoBehaviour
     private void TryInteract()
     {
         RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 2f))
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, interactDistance))
         {
             InteractObject interactObject = hit.collider.GetComponent<InteractObject>();
             if (interactObject != null)

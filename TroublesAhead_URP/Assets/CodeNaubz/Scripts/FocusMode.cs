@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class FocusMode : MonoBehaviour
 {
-    private Quaternion originalRotation;
-    private CharacterControllerScript characterControllerScript;
+    public GameObject player;
+    public CharacterControllerScript playerController;
 
     private void Start()
     {
-        characterControllerScript = GetComponent<CharacterControllerScript>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<CharacterControllerScript>();
+        
+        
     }
 
     public void EnableFocusMode()
     {
         // Disable camera rotation
-        characterControllerScript.focusActif = true;
+        playerController.focusActif = true;
 
         // Unlock the cursor
         Cursor.lockState = CursorLockMode.None;
@@ -24,7 +27,8 @@ public class FocusMode : MonoBehaviour
 
     public void DisableFocusMode()
     {
-        characterControllerScript.focusActif = false;
+
+        playerController.focusActif = false;
 
         // Lock the cursor
         Cursor.lockState = CursorLockMode.Locked;
