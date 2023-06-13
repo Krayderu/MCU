@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cb70f7b8313a49418402bcda887f7ff
+guid: 36f41d93c95880241afcda4de7344f95
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Selecta_Base
-    second: {fileID: 2100000, guid: fa08b7cc9560fc14baa59583aaefc16c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Selecta_Glass
-    second: {fileID: 2100000, guid: bf016f003bdfbb943800b0082d7ae9b3, type: 2}
+      name: chips_3_initialShadingGroup2
+    second: {fileID: 2100000, guid: 4f6b3a62c6f633e4e8c44f91b4275a6f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

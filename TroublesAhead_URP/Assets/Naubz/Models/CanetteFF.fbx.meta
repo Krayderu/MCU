@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cb70f7b8313a49418402bcda887f7ff
+guid: 44af47929e33d4c47a266a3a380cae41
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Selecta_Base
-    second: {fileID: 2100000, guid: fa08b7cc9560fc14baa59583aaefc16c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Selecta_Glass
-    second: {fileID: 2100000, guid: bf016f003bdfbb943800b0082d7ae9b3, type: 2}
+      name: lambert27
+    second: {fileID: 2100000, guid: 23ec71a5d1b4ee54e9a796f9e233a7e8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 60
+    globalScale: 14
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 60
+    globalScale: 0.14
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
