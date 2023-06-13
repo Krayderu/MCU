@@ -32,11 +32,7 @@ public class CharacterControllerScript : MonoBehaviour
 
         ObjectDetection();
 
-        // Handle interaction
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TryInteract();
-        }
+        
 
 
         if (!focusActif)
@@ -46,6 +42,12 @@ public class CharacterControllerScript : MonoBehaviour
             Jump();
 
             PlayerMovement();
+
+            // Handle interaction
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                TryInteract();
+            }
 
         }
         

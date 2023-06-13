@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractObject : MonoBehaviour
 {
-    private Outline outline;
+    public Outline outline;
     public GameObject player;
     public CharacterControllerScript playerController;
 
@@ -12,7 +12,7 @@ public class InteractObject : MonoBehaviour
     {
         outline = GetComponent<Outline>();
         outline.enabled = false;
-
+        FindPlayer();
     }
 
     public virtual void Interact()
@@ -20,12 +20,12 @@ public class InteractObject : MonoBehaviour
         Debug.Log($"Interacting with {gameObject.name}!");
     }
 
-    public void EnterFocus()
+    public virtual void EnterFocus()
     {
         outline.enabled = true;
     }
 
-    public void ExitFocus()
+    public virtual void ExitFocus()
     {
         outline.enabled = false;
     }

@@ -3475,7 +3475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Hello, i'm Henry. The cashier.
+  storyText: Hi, i'm Henry.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3542,8 +3542,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1053117876}
+  selectedCommands:
+  - {fileID: 1053117874}
   variables: []
   description: 
   stepPause: 0
@@ -3838,8 +3840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 634.26666
-    y: 154.44832
+    x: 633.26666
+    y: 155.44832
     width: 71
     height: 40
   tint: {r: 0.9716981, g: 0.07700242, b: 0.07700242, a: 1}
@@ -5735,7 +5737,7 @@ MonoBehaviour:
     m_Bits: 524288
   interactDistance: 4
   focusActif: 0
-  step: 0
+  step: -1
 --- !u!136 &1526739913
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7437,6 +7439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164865e5d17a47c4083c59d35eb1c12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
   flowchart: {fileID: 1053117877}
@@ -7453,6 +7456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb83b5c27aa87a4a9f7e6614dae8f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
 --- !u!65 &2067074773
@@ -8151,8 +8155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418c24a0a1c13de40b1727bc57be9862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
+  minimumStep: 0
   animator: {fileID: 919132148507645836}
 --- !u!65 &919132148507645838
 BoxCollider:
@@ -8179,6 +8185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb83b5c27aa87a4a9f7e6614dae8f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
 --- !u!114 &919132148507645840

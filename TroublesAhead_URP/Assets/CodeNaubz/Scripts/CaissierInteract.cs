@@ -18,6 +18,8 @@ public class CaissierInteract : InteractObject
 
     public override void Interact()
     {
+        if (playerController.step < 0) return;
+
         base.Interact();
 
         focusMode.EnableFocusMode();
