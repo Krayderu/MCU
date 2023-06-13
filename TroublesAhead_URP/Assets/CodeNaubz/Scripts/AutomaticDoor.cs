@@ -6,7 +6,7 @@ public class AutomaticDoor : MonoBehaviour
 {
 
     public Animator animator;
-    public float maxTime = 6;
+    public float maxTime = 3;
 
 
     private void OnTriggerEnter(Collider other)
