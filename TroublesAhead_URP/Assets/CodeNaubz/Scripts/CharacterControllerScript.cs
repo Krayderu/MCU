@@ -9,7 +9,7 @@ public class CharacterControllerScript : MonoBehaviour
     public float jumpForce = 5f;
     public LayerMask groundLayer;
     public float interactDistance = 3f;
-    public bool focusActif = false;
+    [HideInInspector] public bool focusActif = false;
 
     // Step for the Storyline
     public int step = 0;
