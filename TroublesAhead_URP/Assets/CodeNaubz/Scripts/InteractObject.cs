@@ -17,7 +17,7 @@ public class InteractObject : MonoBehaviour
 
     public virtual void Interact()
     {
-       // Debug.Log($"Interacting with {gameObject.name}!");
+        Debug.Log($"Interacting with {gameObject.name}!");
     }
 
     public virtual void EnterFocus()

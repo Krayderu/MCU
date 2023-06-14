@@ -9,6 +9,7 @@ public class LighterStandInteract : InteractObject
     public Flowchart flowchart;
     [SerializeField] private FocusMode focusMode;
     public Animator animator;
+    public float maxTime = 1;
 
     // Start is called before the first frame update
     public override void Start()
@@ -33,15 +34,21 @@ public class LighterStandInteract : InteractObject
             playerController.step = 1;
         }
 
-        //if (animator.GetBool("isShake") == true)
-        {
-          // animator.SetBool("isShake", false);
-        }
-       
 
         animator.SetBool("isShake", true);
 
+        StartCoroutine(CloseAfterTime(maxTime));
 
+        
+        
+
+    }
+
+    private IEnumerator CloseAfterTime(float maxTime)
+    {
+        yield return new WaitForSeconds(maxTime);
+        animator.SetBool("isShake", false);
+        yield return null;
     }
 
 }
