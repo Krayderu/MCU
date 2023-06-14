@@ -1748,7 +1748,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 841.9992
     y: 151.98912
-    width: 72.784805
+    width: 71
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1877,7 +1877,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 842.29663
     y: 70.4176
-    width: 87.97467
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 652.0764
     y: 97.5165
-    width: 84.17721
+    width: 84
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2040,11 +2040,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 232.27536, y: -263.55487}
+  scrollPos: {x: 96.40457, y: 58.903214}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7900002
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2052,9 +2052,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 529622414}
-  selectedCommands:
-  - {fileID: 529622442}
+  - {fileID: 529622440}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2150,7 +2149,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 843.5672
     y: 487.98926
-    width: 86.70885
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2196,7 +2195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 829.6542
     y: 560.1488
-    width: 80.37974
+    width: 78
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2275,7 +2274,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 825.3801
     y: 411.65018
-    width: 95.56961
+    width: 93
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2484,7 +2483,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 616.58044
     y: 484.79822
-    width: 84.17721
+    width: 83
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2560,7 +2559,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 838.2061
     y: 325.8077
-    width: 79.113914
+    width: 77
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2639,7 +2638,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 834.10724
     y: 244.23611
-    width: 94.30379
+    width: 92
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2823,7 +2822,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 645.52057
     y: 284.5219
-    width: 82.911385
+    width: 82
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8830,7 +8829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1879200197}
+  selectedFlowchart: {fileID: 529622410}
 --- !u!4 &1954499571
 Transform:
   m_ObjectHideFlags: 1
