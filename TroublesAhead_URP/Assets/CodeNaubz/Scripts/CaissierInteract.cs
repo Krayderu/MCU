@@ -13,7 +13,6 @@ public class CaissierInteract : InteractObject
     {
         base.Start();
 
-        FindPlayer();
     }
 
     public override void Interact()

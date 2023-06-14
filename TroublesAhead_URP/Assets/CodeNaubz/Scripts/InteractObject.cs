@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InteractObject : MonoBehaviour
 {
-    public Outline outline;
-    public GameObject player;
-    public CharacterControllerScript playerController;
+    [HideInInspector] public Outline outline;
+    [HideInInspector] public GameObject player;
+    [HideInInspector] public CharacterControllerScript playerController;
 
     public virtual void Start()
     {
@@ -17,7 +17,7 @@ public class InteractObject : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log($"Interacting with {gameObject.name}!");
+       // Debug.Log($"Interacting with {gameObject.name}!");
     }
 
     public virtual void EnterFocus()
