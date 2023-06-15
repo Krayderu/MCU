@@ -23,7 +23,7 @@ public class JanitorInteract : StepInteractObject
 
         flowchart.ExecuteBlock("Step0");
 
-
+        playerController.step = 5;
     }
 
 }
