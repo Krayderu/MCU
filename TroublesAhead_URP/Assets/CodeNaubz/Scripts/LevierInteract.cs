@@ -8,6 +8,7 @@ public class LevierInteract : StepInteractObject
 
     public Flowchart flowchart;
     public Animator animator;
+    [SerializeField] private FocusMode focusMode;
 
     // Start is called before the first frame update
     public override void Start()
@@ -17,9 +18,20 @@ public class LevierInteract : StepInteractObject
 
     public override void StepInteract()
     {
+        focusMode.EnableFocusMode();
+
         flowchart.ExecuteBlock("Step0");
 
 
+    }
+
+    public void EndLever()
+    {
+        playerController.step = 4;
+
+        ExitFocus();
+
+        minimumStep = 50;
     }
 
 }

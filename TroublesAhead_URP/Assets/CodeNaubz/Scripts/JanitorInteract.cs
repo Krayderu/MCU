@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
-public class BoitierLevierInteract : StepInteractObject
+public class JanitorInteract : StepInteractObject
 {
-
+    public Flowchart flowchart;
     public Animator animator;
-    public new Collider collider;
+    [SerializeField] private FocusMode focusMode;
 
 
     // Start is called before the first frame update
@@ -15,19 +16,14 @@ public class BoitierLevierInteract : StepInteractObject
         base.Start();
     }
 
+
     public override void StepInteract()
     {
-        animator.SetBool("isOpen", true);
+        focusMode.EnableFocusMode();
 
-        playerController.step = 3;
+        flowchart.ExecuteBlock("Step0");
 
-        ExitFocus();
-
-        minimumStep = 50;
-
-        collider.enabled = false;
 
     }
-
 
 }
