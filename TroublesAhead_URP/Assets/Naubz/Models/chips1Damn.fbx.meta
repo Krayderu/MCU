@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: chips_initialShadingGroup2
-    second: {fileID: 2100000, guid: dc3f4cf78bc34ea4c84efe2ab936d86a, type: 2}
+    second: {fileID: 2100000, guid: 058ac0899a168da45b3e94ab65f2ba34, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.59999996
+    globalScale: 60
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
