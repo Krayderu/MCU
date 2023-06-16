@@ -23,17 +23,17 @@ public class WCInteract : InteractObject
 
         focusMode.EnableFocusMode();
 
-        if(playerController.step < 5)
+        if(playerController.step < 6)
         {
             flowchart.ExecuteBlock("Step0");
         }
 
-        if (playerController.step == 5)
+        if (playerController.step == 6)
         {
             flowchart.ExecuteBlock("Step1");
         }
 
-        if (playerController.step > 5)
+        if (playerController.step > 6)
         {
             flowchart.ExecuteBlock("Step2");
         }
