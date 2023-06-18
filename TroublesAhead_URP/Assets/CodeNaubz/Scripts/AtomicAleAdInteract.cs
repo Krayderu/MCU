@@ -31,6 +31,6 @@ public class AtomicAleAdInteract : StepInteractObject
             playerController.step = 7;
         }
 
-        minimumStep += 1;
+        minimumStep = 0;
     }
 }
