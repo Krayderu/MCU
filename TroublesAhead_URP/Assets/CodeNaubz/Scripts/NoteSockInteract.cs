@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class JanitorInteract : StepInteractObject
+public class NoteSockInteract : StepInteractObject
 {
     public Flowchart flowchart;
-    public Animator animator;
     [SerializeField] private FocusMode focusMode;
-
 
     // Start is called before the first frame update
     public override void Start()
@@ -16,16 +14,16 @@ public class JanitorInteract : StepInteractObject
         base.Start();
     }
 
-
     public override void StepInteract()
     {
         focusMode.EnableFocusMode();
 
         flowchart.ExecuteBlock("Step0");
 
-        playerController.step = 5;
+        if(playerController.step == 9)
+        {
+            playerController.step = 10;
+        }
 
-        playerController.janitorFound = true;
     }
-
 }

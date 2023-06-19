@@ -16,7 +16,6 @@ Material:
   - _MK_LIGHT_BANDED
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
-  - _MK_VERTEX_ANIMATION_PULSE
   - _MK_WRAPPED_DIFFUSE
   m_InvalidKeywords:
   - _FRESNELHIGHLIGHTS_ON
@@ -286,7 +285,7 @@ Material:
     - _Surface: 0
     - _ThresholdMapScale: 1
     - _UVSec: 0
-    - _VertexAnimation: 2
+    - _VertexAnimation: 0
     - _VertexAnimationIntensity: 0.02
     - _VertexAnimationStutter: 0
     - _Workflow: 0

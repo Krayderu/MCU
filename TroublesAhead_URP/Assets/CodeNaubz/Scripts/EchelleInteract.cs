@@ -19,16 +19,22 @@ public class EchelleInteract : InteractObject
     {
         base.Interact();
 
-        focusMode.EnableFocusMode();
+        
 
         if(playerController.step < 8)
         {
+            focusMode.EnableFocusMode();
+
             flowchart.ExecuteBlock("Step0");
         }
 
         if(playerController.step == 8)
         {
+            focusMode.EnableFocusMode();
+
             flowchart.ExecuteBlock("Step1");
+
+            
         }
 
         if(playerController.step > 8)
@@ -41,6 +47,8 @@ public class EchelleInteract : InteractObject
     public void ClimbLadder()
     {
         Debug.Log("Ladder climbed !");
+
+        player.transform.position = new Vector3(7.66f, 9.13f, -80.754f);
     }
 
 }

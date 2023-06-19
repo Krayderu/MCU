@@ -33,6 +33,16 @@ public class CaissierInteract : InteractObject
             flowchart.ExecuteBlock("Step1");
         }
 
+        if(playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == false)
+        {
+            flowchart.ExecuteBlock("Step2");
+        }
+
+        if (playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == true)
+        {
+            flowchart.ExecuteBlock("Step3");
+        }
+
     }
 
     public void NextStep()
