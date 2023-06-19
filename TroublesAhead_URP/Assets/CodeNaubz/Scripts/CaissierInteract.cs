@@ -43,6 +43,11 @@ public class CaissierInteract : InteractObject
             flowchart.ExecuteBlock("Step3");
         }
 
+        if(playerController.step == 10)
+        {
+            flowchart.ExecuteBlock("Step4");
+        }
+
     }
 
     public void NextStep()
