@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa18978a9cf8c0941858bc00e2fc33f1
+guid: 846717b36be71b34584a882f20558bb6
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GatoradeBase
-    second: {fileID: 2100000, guid: 38e6aaa497117424cbba453aadde155b, type: 2}
+    second: {fileID: 2100000, guid: 1940180a08094b041a61328d8b41ac6f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GatoradeGlass
-    second: {fileID: 2100000, guid: 38e6aaa497117424cbba453aadde155b, type: 2}
+    second: {fileID: 2100000, guid: 1940180a08094b041a61328d8b41ac6f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
