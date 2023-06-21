@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class StoolInteract : StepInteractObject
+public class StoolSpotInteract : StepInteractObject
 {
-
     public Flowchart flowchart;
     [SerializeField] private FocusMode focusMode;
 
