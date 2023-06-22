@@ -9,13 +9,14 @@ public class CharacterControllerScript : MonoBehaviour
     public float jumpForce = 5f;
     public LayerMask groundLayer;
     public float interactDistance = 3f;
+    public Rigidbody rb;
+    public CapsuleCollider cl;
     [HideInInspector] public bool focusActif = false;
 
     // Step for the Storyline
     public int step = 0;
     public bool janitorFound = false;
 
-    private Rigidbody rb;
     private float rotationX = 0f;
     private bool isGrounded;
     private Camera playerCamera;
@@ -144,4 +145,10 @@ public class CharacterControllerScript : MonoBehaviour
             focusedInteractable = null;
         }
     }
+
+    public void LeaveParent()
+    {
+        transform.parent = null;
+    }
+
 }
