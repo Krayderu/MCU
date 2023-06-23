@@ -49,7 +49,14 @@ public class CamtarInteract : InteractObject
 
     public void EnterCamtar()
     {
-       // player.transform.position = new Vector3(x, y, z);
+        playerController.rb.useGravity = false;
+
+        playerController.cl.enabled = false;
+
+        player.transform.position = new Vector3(-14.6f, 1.5f, -10.57f);
+
+        player.transform.eulerAngles = new Vector3(0f, 265f, 0f);
+        Camera.main.transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     public void ExitCamtar()
@@ -59,6 +66,7 @@ public class CamtarInteract : InteractObject
 
         playerController.cl.enabled = true;
 
-        player.transform.position = new Vector3(-8.8f, 2f, -14.35f);
+        player.transform.position = new Vector3(-14f, 2f, -14.35f);
+
     }
 }

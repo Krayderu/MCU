@@ -12,6 +12,7 @@ public class CharacterControllerScript : MonoBehaviour
     public Rigidbody rb;
     public CapsuleCollider cl;
     [HideInInspector] public bool focusActif = false;
+    public GameObject parentObj;
 
     // Step for the Storyline
     public int step = 0;
@@ -149,6 +150,11 @@ public class CharacterControllerScript : MonoBehaviour
     public void LeaveParent()
     {
         transform.parent = null;
+    }
+
+    public void EnterParent()
+    {
+        this.transform.parent = parentObj.transform;
     }
 
 }
