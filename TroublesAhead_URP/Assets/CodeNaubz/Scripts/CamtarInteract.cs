@@ -55,7 +55,7 @@ public class CamtarInteract : InteractObject
 
         player.transform.position = new Vector3(-14.6f, 1.5f, -10.57f);
 
-        player.transform.eulerAngles = new Vector3(0f, 265f, 0f);
+        player.transform.eulerAngles = new Vector3(0f, 145f, 0f);
         Camera.main.transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 

@@ -15,6 +15,10 @@ public class InteractObject : MonoBehaviour
         FindPlayer();
     }
 
+    public virtual void Update()
+    {
+        
+    }
     public virtual void Interact()
     {
         Debug.Log($"Interacting with {gameObject.name}!");

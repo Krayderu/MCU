@@ -55,6 +55,7 @@ public class CaissierInteract : InteractObject
 
     }
 
+
     public void NextStep()
     {
         playerController.step += 1;
