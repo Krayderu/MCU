@@ -13,6 +13,7 @@ public class CharacterControllerScript : MonoBehaviour
     public CapsuleCollider cl;
     [HideInInspector] public bool focusActif = false;
     public GameObject parentObj;
+    public AudioSource footstep;
 
     // Step for the Storyline
     public int step = 0;
@@ -115,6 +116,17 @@ public class CharacterControllerScript : MonoBehaviour
         movement *= movementSpeed * Time.deltaTime;
 
         rb.MovePosition(rb.position + movement);
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            footstep.enabled = true;
+        }
+        else
+        {
+            footstep.enabled = false;
+        }
+
+
     }
 
     private void ObjectDetection()
