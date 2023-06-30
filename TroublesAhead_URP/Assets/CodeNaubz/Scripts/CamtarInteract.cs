@@ -11,11 +11,7 @@ public class CamtarInteract : InteractObject
     // Start is called before the first frame update
     public override void Start()
     {
-        Debug.Log("sucemoi");
-
         base.Start();
-
-        Debug.Log("sucemoi2");
 
         flowchart.ExecuteBlock("Step0");
 
