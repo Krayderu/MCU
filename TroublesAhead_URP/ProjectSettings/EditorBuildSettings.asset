@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AP/Assets/Scenes/Test/00_MainMenu.unity
-    guid: 8ae5edf24d8200f4bab1edf1196dfc9a
+    path: Assets/CodeNaubz/Scenes/MainMenu.unity
+    guid: 95616c509087fda45957a5a2f69dba89
   - enabled: 1
-    path: Assets/AP/Assets/Scenes/Test/01_DefaultScene.unity
-    guid: 6a727ab8d2332f44d8ddbb860ce673bf
+    path: Assets/Naubz/Naubz.unity
+    guid: 0aa5145b6290b184eae6758d13100f8e
   m_configObjects: {}
