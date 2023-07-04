@@ -36,9 +36,6 @@ public class CharacterControllerScript : MonoBehaviour
 
         ObjectDetection();
 
-        
-
-
         if (!focusActif)
         {
             CameraRotation();
@@ -52,7 +49,6 @@ public class CharacterControllerScript : MonoBehaviour
             {
                 TryInteract();
             }
-
         }
         
     }
