@@ -113,13 +113,13 @@ public class CharacterControllerScript : MonoBehaviour
 
         rb.MovePosition(rb.position + movement);
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) && isGrounded || Input.GetKey(KeyCode.A) && isGrounded || Input.GetKey(KeyCode.S) && isGrounded || Input.GetKey(KeyCode.D) && isGrounded)
         {
-            //footstep.enabled = true;
+            footstep.enabled = true;
         }
         else
         {
-          //  footstep.enabled = false;
+            footstep.enabled = false;
         }
 
 
