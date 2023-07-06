@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Oil_Floor
+    second: {fileID: 2100000, guid: 67070f0d4aec9a04a9cc99af2a95cace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: PompeEssence
     second: {fileID: 2100000, guid: a72a4ced7bb05d64a909a67b282cf66f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PompeReservoir
+    second: {fileID: 2100000, guid: 979c0518d03256e4eb3efd6812126405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PompeTuyau
+    second: {fileID: 2100000, guid: 77943a74fedf8ed4c9612dccab66b197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ProtectionEssence
+    second: {fileID: 2100000, guid: fdd9309781695a847847fec3a4eaea14, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
