@@ -29,5 +29,7 @@ public class StoolSpotInteract : StepInteractObject
     public void StopInteract()
     {
         minimumStep = 50;
+
+        outline.enabled = false;
     }
 }

@@ -9,6 +9,14 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    public GameObject badgeUI;
+
+    public GameObject broomUI;
+
+    public bool isBroom = false;
+
+    public bool isBadge = false;
+
     public bool isTexting = false;
 
     [SerializeField] private FocusMode focusMode;
@@ -62,5 +70,36 @@ public class PauseMenu : MonoBehaviour
     {
         isTexting = false;
     }
+
+    void CallBadge()
+    {
+        if (isBadge)
+        {
+            badgeUI.SetActive(false);
+            isBadge = false;
+        }
+        else
+        {
+            badgeUI.SetActive(true);
+            isBadge = true;
+        }
+
+    }
+
+    void CallBroom()
+    {
+        if (isBroom)
+        {
+            broomUI.SetActive(false);
+            isBroom = false;
+        }
+        else
+        {
+            broomUI.SetActive(true);
+            isBroom = true;
+        }
+
+    }
+
 }
 

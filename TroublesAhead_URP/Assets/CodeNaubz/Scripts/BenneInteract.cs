@@ -23,6 +23,10 @@ public class BenneInteract : StepInteractObject
         flowchart.ExecuteBlock("Step0");
 
         playerController.step = 6;
+
+        minimumStep = 50;
+
+        outline.enabled = false;
     }
 
 }

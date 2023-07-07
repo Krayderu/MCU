@@ -30,5 +30,7 @@ public class SdfInteract : StepInteractObject
     public void StopInteract()
     {
         minimumStep = 50;
+
+        outline.enabled = false;
     }
 }
