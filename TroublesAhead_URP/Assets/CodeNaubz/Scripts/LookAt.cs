@@ -6,15 +6,31 @@ public class LookAt : MonoBehaviour
 {
     public Transform target;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isLooking = true;
+
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(target.transform);
+        if (isLooking)
+        {
+            transform.LookAt(target.transform);
+        }
+
+    }
+
+    void CallLooking()
+    {
+        if (isLooking)
+        {
+            isLooking = false;
+            animator.enabled = true;
+        }
+        else
+        {
+            isLooking = true;
+            animator.enabled = false;
+        }
     }
 }

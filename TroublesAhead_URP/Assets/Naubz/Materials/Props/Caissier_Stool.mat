@@ -16,7 +16,7 @@ Material:
   - _MK_LIGHT_BANDED
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
-  - _MK_VERTEX_ANIMATION_STUTTER
+  - _MK_VERTEX_ANIMATION_SINE
   - _MK_WRAPPED_DIFFUSE
   m_InvalidKeywords:
   - _FRESNELHIGHLIGHTS_ON
@@ -24,7 +24,6 @@ Material:
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_OUTLINE_NOISE
   - _RECEIVESHADOWS_ON
-  - _VERTEXANIMATIONSTUTTER_ON
   - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -187,7 +186,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AdvancedTab: 1
+    - _AdvancedTab: 0
     - _AlbedoMapIntensity: 1
     - _AlphaClipping: 0
     - _AlphaCutoff: 0.5
@@ -287,9 +286,9 @@ Material:
     - _Surface: 0
     - _ThresholdMapScale: 1
     - _UVSec: 0
-    - _VertexAnimation: 0
+    - _VertexAnimation: 1
     - _VertexAnimationIntensity: 0.005
-    - _VertexAnimationStutter: 1
+    - _VertexAnimationStutter: 0
     - _Workflow: 0
     - _WrappedLighting: 1
     - _ZTest: 4
@@ -309,5 +308,5 @@ Material:
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimDarkColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.20312497, g: 0.20312497, b: 0.20312497, a: 1}
-    - _VertexAnimationFrequency: {r: 2, g: 2, b: 2, a: 0}
+    - _VertexAnimationFrequency: {r: -2, g: 0.5, b: 4, a: 0}
   m_BuildTextureStacks: []
