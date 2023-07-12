@@ -271,7 +271,7 @@ Material:
     - _RefractionDistortionFade: 0.834
     - _RefractionDistortionMapScale: 1
     - _RefractionTab: 1
-    - _RenderFace: 0
+    - _RenderFace: 2
     - _RenderPriority: 0
     - _Rim: 0
     - _RimSize: 1
