@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GlassNeon
-    second: {fileID: 2100000, guid: ea2f42ab7e497994fa1a9463c1a49b00, type: 2}
+    second: {fileID: 2100000, guid: 0b290e49050e21546aa34f9eadf83fb9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

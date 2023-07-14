@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 005c3f0ee0263fb449d3cc7cc0dcf708, type: 3}
+        m_Texture: {fileID: 2800000, guid: b9d3d72827e28ef4a86f720e2d858b68, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GoochBrightMap:

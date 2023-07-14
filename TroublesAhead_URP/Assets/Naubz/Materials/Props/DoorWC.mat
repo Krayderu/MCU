@@ -235,9 +235,9 @@ Material:
     - _IridescenceSmoothness: 0.5
     - _IridescenceThresholdOffset: 0
     - _Light: 2
-    - _LightBands: 3
+    - _LightBands: 7
     - _LightBandsScale: 0.483
-    - _LightThreshold: 0.611
+    - _LightThreshold: 0.467
     - _LightTransmission: 0
     - _LightTransmissionDistortion: 0.25
     - _LightTransmissionIntensity: 1
@@ -267,7 +267,7 @@ Material:
     - _Roughness: 0.5
     - _Saturation: 1
     - _SketchMapScale: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularHighlights: 1

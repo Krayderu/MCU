@@ -836,7 +836,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 34453a4d57f0e3c4892df9c49a565a6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 54ebff4cd4a75914eb2fa856be80d0a4, type: 2}
     - target: {fileID: 919132149155446097, guid: ac317d18082af4b48bd9de022545168b,
         type: 3}
       propertyPath: m_Name
@@ -850,6 +850,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5273115787258430212}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6507580011229753899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7826605978412699345, guid: ac317d18082af4b48bd9de022545168b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273115787258430212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1512591836342725211
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507580011229753899}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 44232cdd39937804186638b4639df1c9, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &5273115787312632741
 PrefabInstance:
   m_ObjectHideFlags: 0
