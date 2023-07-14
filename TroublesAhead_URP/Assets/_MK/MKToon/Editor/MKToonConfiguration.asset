@@ -73,16 +73,16 @@ MonoBehaviour:
   - rid: 8
   - rid: 9
   _globalShaderFeaturesTemp:
-  - rid: 416732597247016980
-  - rid: 416732597247016981
-  - rid: 416732597247016982
-  - rid: 416732597247016983
-  - rid: 416732597247016984
-  - rid: 416732597247016985
-  - rid: 416732597247016986
-  - rid: 416732597247016987
-  - rid: 416732597247016988
-  - rid: 416732597247016989
+  - rid: 4184075277967294464
+  - rid: 4184075277967294465
+  - rid: 4184075277967294466
+  - rid: 4184075277967294467
+  - rid: 4184075277967294468
+  - rid: 4184075277967294469
+  - rid: 4184075277967294470
+  - rid: 4184075277967294471
+  - rid: 4184075277967294472
+  - rid: 4184075277967294473
   references:
     version: 2
     RefIds:
@@ -201,7 +201,7 @@ MonoBehaviour:
         _name: Linear Light Attenuation
         _tooltip: Changes the light attenuation for non-directional lights more linear
           (Approximately like builtin renderpipeline).
-    - rid: 416732597247016980
+    - rid: 4184075277967294464
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
         _name: Albedo Map Intensity
         _tooltip: Enables an albedo intensity to control the intensity of the albedo
           map into the rendering. 0 = black, 1 = full albedo
-    - rid: 416732597247016981
+    - rid: 4184075277967294465
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
         _compileDirectives: []
         _name: Multiply vertex color with albedo
         _tooltip: Multiplies vertex color into the albedo Color.
-    - rid: 416732597247016982
+    - rid: 4184075277967294466
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
         - MK_TOON_OUTLINE_FADING_INVERSE_EXPONENTIAL
         _name: Outline Distance Fading
         _tooltip: Enable outline distance based fading.
-    - rid: 416732597247016983
+    - rid: 4184075277967294467
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
         _compileDirectives: []
         _name: Force Point Filtering
         _tooltip: Forces point filtering on textures.
-    - rid: 416732597247016984
+    - rid: 4184075277967294468
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
         _compileDirectives: []
         _name: Dissolve Projection Screen Space
         _tooltip: Forces dissolve projection into screen space.
-    - rid: 416732597247016985
+    - rid: 4184075277967294469
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 1
@@ -270,7 +270,7 @@ MonoBehaviour:
         _compileDirectives: []
         _name: Enable Local Antialiasing
         _tooltip: Enables local antialiasing except for mobile devices.
-    - rid: 416732597247016986
+    - rid: 4184075277967294470
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
         _name: Stylize System Shadows
         _tooltip: Stylizes the system shadows like the lighting. Be careful with
           the thresholds!
-    - rid: 416732597247016987
+    - rid: 4184075277967294471
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
         _name: Legacy Screen Scaling
         _tooltip: Enables legacy screen spaced scaling for artistic textures and
           outlines in clip space.
-    - rid: 416732597247016988
+    - rid: 4184075277967294472
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
           clip space. \n\n This should only be enabled if your XR Render Mode is
           set to \"Multi Pass\". \n\n This is required because there is no workaround
           to detect the \"Multi Pass\" rendering mode, when using XR."
-    - rid: 416732597247016989
+    - rid: 4184075277967294473
       type: {class: GlobalShaderFeature, ns: MK.Toon.Editor, asm: MK.Toon.Editor}
       data:
         _mode: 0

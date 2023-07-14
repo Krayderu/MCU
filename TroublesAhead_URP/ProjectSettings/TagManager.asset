@@ -40,7 +40,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - InsideLight
   - ObjectViewerCam
   - detector
   - layerTrigger
@@ -53,7 +53,7 @@ TagManager:
   - ColDrawerOnlyWithPlayer
   - objsFloor
   - groundLayer
-  - 
+  - FridgeLights
   - 
   - 
   - 
