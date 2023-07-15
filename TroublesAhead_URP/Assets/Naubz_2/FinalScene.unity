@@ -17615,7 +17615,7 @@ Light:
   m_Intensity: 39.19
   m_Range: 3.6069214
   m_SpotAngle: 73.461395
-  m_InnerSpotAngle: 53.003677
+  m_InnerSpotAngle: 63.050133
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
