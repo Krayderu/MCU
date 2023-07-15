@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e9ed47bc45203d42b13bf47b2398f74
+guid: cfb4b989a1c973947b37415afcf89302
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Aquarium
-    second: {fileID: 2100000, guid: 05a0c8482d7192c40b7b3c6fb354ecb9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Fish_Paper
-    second: {fileID: 2100000, guid: 1231d0a8003506b45954cf41d6c634c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sabf
-    second: {fileID: 2100000, guid: 55d1e47f808053c40bf5860022c99243, type: 2}
+      name: Enseigne_Emission
+    second: {fileID: 2100000, guid: 9d3c1dee76d13ad4a8e358bfa60990cf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -50,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 130
+    globalScale: 80
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -103,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 130
+    globalScale: 80
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

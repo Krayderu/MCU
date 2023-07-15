@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SABF
+  m_Name: Door_BR
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
   m_ValidKeywords:
   - _MK_ALBEDO_MAP
@@ -16,7 +16,7 @@ Material:
   - _MK_LIGHT_BANDED
   - _MK_RECEIVE_SHADOWS
   - _MK_SPECULAR_ISOTROPIC
-  - _MK_VERTEX_ANIMATION_SINE
+  - _MK_VERTEX_ANIMATION_STUTTER
   - _MK_WRAPPED_DIFFUSE
   m_InvalidKeywords:
   - _FRESNELHIGHLIGHTS_ON
@@ -24,6 +24,7 @@ Material:
   - _MK_FRESNEL_HIGHLIGHTS
   - _MK_OUTLINE_NOISE
   - _RECEIVESHADOWS_ON
+  - _VERTEXANIMATIONSTUTTER_ON
   - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -37,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 9b1b67a75634adb498bad44fb04354fd, type: 3}
+        m_Texture: {fileID: 2800000, guid: c648cdaa9686c07479cf70e5019b86b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -113,7 +114,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9b1b67a75634adb498bad44fb04354fd, type: 3}
+        m_Texture: {fileID: 2800000, guid: c648cdaa9686c07479cf70e5019b86b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -286,9 +287,9 @@ Material:
     - _Surface: 0
     - _ThresholdMapScale: 1
     - _UVSec: 0
-    - _VertexAnimation: 1
+    - _VertexAnimation: 0
     - _VertexAnimationIntensity: 0.005
-    - _VertexAnimationStutter: 0
+    - _VertexAnimationStutter: 1
     - _Workflow: 0
     - _WrappedLighting: 1
     - _ZTest: 4
