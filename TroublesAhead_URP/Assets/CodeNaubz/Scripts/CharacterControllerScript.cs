@@ -40,7 +40,7 @@ public class CharacterControllerScript : MonoBehaviour
         {
             CameraRotation();
 
-            Jump();
+           // Jump();
 
             PlayerMovement();
 
@@ -67,7 +67,7 @@ public class CharacterControllerScript : MonoBehaviour
         }
     }
 
-    private void TryInteract()
+    public void TryInteract()
     {
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, interactDistance))

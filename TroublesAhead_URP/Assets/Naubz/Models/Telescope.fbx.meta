@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40073fe903e0c214fa3dbb920fbfebd7
+guid: 3a9a9325196c43f4e8b3bacc979cbd33
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 69c9f45e2c710ed45a52ad50bf2117aa, type: 2}
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: b3a380f3ea19de34ba4da8616c54147c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

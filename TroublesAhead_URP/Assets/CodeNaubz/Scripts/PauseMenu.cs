@@ -13,9 +13,13 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject broomUI;
 
+    public GameObject stoolUI;
+
     public bool isBroom = false;
 
     public bool isBadge = false;
+
+    public bool isStool = false;
 
     public bool isTexting = false;
 
@@ -97,6 +101,21 @@ public class PauseMenu : MonoBehaviour
         {
             broomUI.SetActive(true);
             isBroom = true;
+        }
+
+    }
+
+    void CallStool()
+    {
+        if (isStool)
+        {
+            stoolUI.SetActive(false);
+            isStool = false;
+        }
+        else
+        {
+            stoolUI.SetActive(true);
+            isStool = true;
         }
 
     }
