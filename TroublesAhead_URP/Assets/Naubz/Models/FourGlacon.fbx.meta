@@ -3,7 +3,17 @@ guid: a03dad13f3915614abdc09d8e9b03e0f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Four_Base
+    second: {fileID: 2100000, guid: 4692cef86f29f234294b5396d3538ea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Four_Glass
+    second: {fileID: 2100000, guid: e0bb39fb74b2d93448a90a0421c36e55, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +98,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.35
+    globalScale: 35
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
