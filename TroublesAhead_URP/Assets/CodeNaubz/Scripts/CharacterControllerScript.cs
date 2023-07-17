@@ -20,7 +20,6 @@ public class CharacterControllerScript : MonoBehaviour
     public bool janitorFound = false;
 
     private float rotationX = 0f;
-    private bool isGrounded;
     private Camera playerCamera;
     private InteractObject focusedInteractable = null;
 
@@ -53,20 +52,6 @@ public class CharacterControllerScript : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
-    {
-        // Check if the character is grounded using a raycast
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f, groundLayer))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-    }
-
     public void TryInteract()
     {
         RaycastHit hit;
@@ -91,16 +76,6 @@ public class CharacterControllerScript : MonoBehaviour
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
     }
 
-    private void Jump()
-    {
-        // Handle jumping
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
-            isGrounded = false;
-        }
-
-    }
 
     private void PlayerMovement()
     {
@@ -113,7 +88,7 @@ public class CharacterControllerScript : MonoBehaviour
 
         rb.MovePosition(rb.position + movement);
 
-        if (Input.GetKey(KeyCode.W) && isGrounded || Input.GetKey(KeyCode.A) && isGrounded || Input.GetKey(KeyCode.S) && isGrounded || Input.GetKey(KeyCode.D) && isGrounded)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D))
         {
             footstep.enabled = true;
         }
