@@ -11,10 +11,15 @@ public class TelescopeInteract : StepInteractObject
 
     public GameObject moonUI;
 
+    public GameObject canvas;
+
+    public PauseMenu scriptCanvas;
+
     // Start is called before the first frame update
     public override void Start()
     {
         base.Start();
+        scriptCanvas = canvas.GetComponent<PauseMenu>();
     }
 
     public override void StepInteract()
@@ -24,12 +29,15 @@ public class TelescopeInteract : StepInteractObject
             focusMode.DisableFocusMode();
             moonUI.SetActive(false);
             isMoon = false;
+            scriptCanvas.TextOff();
+
         }
         else
         {
             focusMode.EnableFocusMode();
             moonUI.SetActive(true);
             isMoon = true;
+            scriptCanvas.TextOn();
         }
     }
 

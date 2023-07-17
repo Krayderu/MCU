@@ -65,12 +65,12 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    void TextOn()
+    public void TextOn()
     {
         isTexting = true;
     }
 
-    void TextOff()
+    public void TextOff()
     {
         isTexting = false;
     }
