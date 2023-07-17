@@ -58,7 +58,7 @@ Material:
     - _PolygonSides: 3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ShineThreshold: 0.87
+    - _ShineThreshold: 1
     - _SineAmplitude: 1
     - _Smoothness: 0.5
     - _SubstrateDuneMaxheight: 0.589
@@ -66,10 +66,10 @@ Material:
     - _SubstrateTightening: 0.67
     - _sineFrequency: 0.86
     - _sineRotation: 0.46
-    - _uvScale: 18.5
+    - _uvScale: 79.78
     m_Colors:
-    - _SandHighColor: {r: 0.5747327, g: 0.44705883, b: 0.8862745, a: 0}
-    - _SandLowColor: {r: 0.47939345, g: 0.33285868, b: 0.8301887, a: 1}
+    - _SandHighColor: {r: 1, g: 0.9676423, b: 0.75, a: 0}
+    - _SandLowColor: {r: 1, g: 0.77195156, b: 0.3537736, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 0}
     - _SubstrateColor: {r: 0.2756764, g: 0.361891, b: 0.5566038, a: 0}
     - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
