@@ -44,7 +44,7 @@ ModelImporter:
     - RIG_Janitor
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 100
