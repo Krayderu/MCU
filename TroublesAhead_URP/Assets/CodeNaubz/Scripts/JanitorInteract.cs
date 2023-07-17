@@ -21,12 +21,27 @@ public class JanitorInteract : StepInteractObject
     {
         focusMode.EnableFocusMode();
 
-        flowchart.ExecuteBlock("Step0");
-
         if (playerController.step == 4)
         {
-            playerController.step = 5;
+            flowchart.ExecuteBlock("Step0");
+           
         }
+
+        if(playerController.step == 5)
+        {
+            flowchart.ExecuteBlock("Step0.5");
+        }
+
+        if (playerController.step >= 8)
+        {
+            flowchart.ExecuteBlock("Step2");
+        }
+
+        if (playerController.step > 5 && playerController.step < 8)
+        {
+            flowchart.ExecuteBlock("Step1");
+        }
+
 
         playerController.janitorFound = true;
     }
