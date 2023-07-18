@@ -95,8 +95,8 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
         // Handle player movement
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = Input.GetKey(KeyCode.D) ? 1f : Input.GetKey(KeyCode.A) ? -1f : 0f;
+        float z = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f : 0f;
 
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
 
@@ -107,7 +107,7 @@ public class CharacterControllerScript : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) && isGrounded || Input.GetKey(KeyCode.A) && isGrounded || Input.GetKey(KeyCode.S) && isGrounded || Input.GetKey(KeyCode.D) && isGrounded)
         {
             footstep.enabled = true;
         }
