@@ -14,6 +14,7 @@ public class AudioController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Debug.Log("change music");
             ToggleAudio();
         }
 
@@ -26,17 +27,17 @@ public class AudioController : MonoBehaviour
 
         if (isInside)
         {
-            currentFadeCoroutine = StartCoroutine(CrossfadeAudio("OutsideVolume", "InsideVolume", 1f, 0f));
+            currentFadeCoroutine = StartCoroutine(CrossfadeAudio("OutsideVolume", "InsideVolume"));
             isInside = false;
         }
         else
         {
-            currentFadeCoroutine = StartCoroutine(CrossfadeAudio("InsideVolume", "OutsideVolume", 1f, 0f));
+            currentFadeCoroutine = StartCoroutine(CrossfadeAudio("InsideVolume", "OutsideVolume"));
             isInside = true;
         }
     }
 
-    private IEnumerator CrossfadeAudio(string fadeInSource, string fadeOutSource, float fadeInTargetVolume, float fadeOutTargetVolume)
+    private IEnumerator CrossfadeAudio(string fadeInSource, string fadeOutSource)
     {
         float timeElapsed = 0f;
 
@@ -45,14 +46,14 @@ public class AudioController : MonoBehaviour
             timeElapsed += Time.deltaTime;
             float normalizedTime = timeElapsed / fadeDuration;
 
-            audioMixer.SetFloat(fadeInSource, Mathf.Lerp(0f, fadeInTargetVolume, normalizedTime));
-            audioMixer.SetFloat(fadeOutSource, Mathf.Lerp(1f, fadeOutTargetVolume, normalizedTime));
+            audioMixer.SetFloat(fadeInSource, Mathf.Lerp(-80f, 0f, normalizedTime));
+            audioMixer.SetFloat(fadeOutSource, Mathf.Lerp(0f, -80f, normalizedTime));
 
             yield return null;
         }
 
-        audioMixer.SetFloat(fadeInSource, fadeInTargetVolume);
-        audioMixer.SetFloat(fadeOutSource, fadeOutTargetVolume);
+        audioMixer.SetFloat(fadeInSource, 0f);
+        audioMixer.SetFloat(fadeOutSource, -80f);
 
         currentFadeCoroutine = null;
     }
