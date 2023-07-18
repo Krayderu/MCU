@@ -10,6 +10,15 @@ public class AudioController : MonoBehaviour
     private bool isInside = false;
     private Coroutine currentFadeCoroutine;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            ToggleAudio();
+        }
+
+
+    }
     public void ToggleAudio()
     {
         if (currentFadeCoroutine != null)
@@ -30,15 +39,14 @@ public class AudioController : MonoBehaviour
     private IEnumerator CrossfadeAudio(string fadeInSource, string fadeOutSource, float fadeInTargetVolume, float fadeOutTargetVolume)
     {
         float timeElapsed = 0f;
-      //  float fadeOutInitialVolume = fadeOutSource.volume;
 
         while (timeElapsed < fadeDuration)
         {
             timeElapsed += Time.deltaTime;
             float normalizedTime = timeElapsed / fadeDuration;
 
-           // fadeInSource.volume = Mathf.Lerp(0f, fadeInTargetVolume, normalizedTime);
-           // fadeOutSource.volume = Mathf.Lerp(fadeOutInitialVolume, fadeOutTargetVolume, normalizedTime);
+            audioMixer.SetFloat(fadeInSource, Mathf.Lerp(0f, fadeInTargetVolume, normalizedTime));
+            audioMixer.SetFloat(fadeOutSource, Mathf.Lerp(1f, fadeOutTargetVolume, normalizedTime));
 
             yield return null;
         }
