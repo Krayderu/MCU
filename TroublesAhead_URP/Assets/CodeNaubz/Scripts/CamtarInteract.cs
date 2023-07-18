@@ -16,13 +16,13 @@ public class CamtarInteract : InteractObject
 
         flowchart.ExecuteBlock("Step0");
 
-        playerController.rb = playerController.GetComponent<Rigidbody>();
+        //playerController.rb = playerController.GetComponent<Rigidbody>();
 
-        playerController.rb.useGravity = false;
+        //playerController.rb.useGravity = false;
 
-        playerController.cl = playerController.GetComponent<CapsuleCollider>();
+        //playerController.cl = playerController.GetComponent<CapsuleCollider>();
 
-        playerController.cl.enabled = false;
+        //playerController.cl.enabled = false;
 
         
     }
@@ -44,26 +44,26 @@ public class CamtarInteract : InteractObject
         }
     }
 
-    public void EnterCamtar()
-    {
-        playerController.rb.useGravity = false;
+    //public void EnterCamtar()
+    //{
+    //    playerController.rb.useGravity = false;
 
-        playerController.cl.enabled = false;
+    //    playerController.cl.enabled = false;
 
-        player.transform.position = new Vector3(-14.6f, 1.5f, -28.05f);
+    //    player.transform.position = new Vector3(-14.6f, 1.5f, -28.05f);
 
-        player.transform.eulerAngles = new Vector3(0f, 90f, 0f);
-       // Camera.main.transform.eulerAngles = new Vector3(0f, 0f, 0f);
-    }
+    //    player.transform.eulerAngles = new Vector3(0f, 90f, 0f);
+    //   // Camera.main.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+    //}
 
-    public void ExitCamtar()
-    {
+    //public void ExitCamtar()
+    //{
 
-        playerController.rb.useGravity = true;
+    //    playerController.rb.useGravity = true;
 
-        playerController.cl.enabled = true;
+    //    playerController.cl.enabled = true;
 
-        player.transform.position = new Vector3(-14.78f, 1.68f, -23.84f);
+    //    player.transform.position = new Vector3(-14.78f, 1.68f, -23.84f);
 
-    }
+    //}
 }

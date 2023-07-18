@@ -4,30 +4,38 @@ using UnityEngine;
 
 public class CharacterControllerScript : MonoBehaviour
 {
-    public float movementSpeed = 5f;
-    public float mouseSensitivity = 2f;
-    public float jumpForce = 5f;
-    public LayerMask groundLayer;
-    public float interactDistance = 3f;
-    public Rigidbody rb;
-    public CapsuleCollider cl;
+    public float movementSpeed = 12f;
+    // public float mouseSensitivity = 2f;
+    public float interactDistance = 4f;
     [HideInInspector] public bool focusActif = false;
     public GameObject parentObj;
     public AudioSource footstep;
+    public CharacterController controller;
+    public GameObject mainCamera;
+    public MouseLook cameraScript;
+
+    public float gravity = -9.81f;
+
+    Vector3 velocity;
+    bool isGrounded;
+
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundLayer;
 
     // Step for the Storyline
     public int step = 0;
     public bool janitorFound = false;
 
-    private float rotationX = 0f;
+    // private float rotationX = 0f;
     private Camera playerCamera;
     private InteractObject focusedInteractable = null;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
         playerCamera = Camera.main;
+        MouseLook cameraScript = mainCamera.GetComponent<MouseLook>();
     }
 
     private void Update()
@@ -37,9 +45,8 @@ public class CharacterControllerScript : MonoBehaviour
 
         if (!focusActif)
         {
-            CameraRotation();
+            cameraScript.CameraRotation();
 
-           // Jump();
 
             PlayerMovement();
 
@@ -65,28 +72,40 @@ public class CharacterControllerScript : MonoBehaviour
         }
     }
 
-    private void CameraRotation()
-    {
-        // Handle camera rotation
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        rotationX -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+    //private void CameraRotation()
+    //{
+    //    Handle camera rotation
+    //    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+    //    rotationX -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+    //    rotationX = Mathf.Clamp(rotationX, -90f, 90f);
 
-        transform.Rotate(0f, mouseX, 0f);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
-    }
+    //    transform.Rotate(0f, mouseX, 0f);
+    //    playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
+    //}
 
 
     private void PlayerMovement()
     {
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundLayer);
+
+        if(isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         // Handle player movement
-        float horizontalInput = Input.GetKey(KeyCode.D) ? 1f : Input.GetKey(KeyCode.A) ? -1f : 0f;
-        float verticalInput = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f : 0f;
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        Vector3 movement = (transform.right * horizontalInput + transform.forward * verticalInput).normalized;
-        movement *= movementSpeed * Time.deltaTime;
+        Vector3 move = (transform.right * x + transform.forward * z).normalized;
 
-        rb.MovePosition(rb.position + movement);
+        controller.Move(move * movementSpeed * Time.deltaTime);
+
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime);
+
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D))
         {
