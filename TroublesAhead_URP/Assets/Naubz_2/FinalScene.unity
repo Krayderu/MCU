@@ -1239,7 +1239,7 @@ MonoBehaviour:
   badgeUI: {fileID: 1808272757}
   broomUI: {fileID: 768626896}
   stoolUI: {fileID: 467346980}
-  creditUI: {fileID: 0}
+  creditUI: {fileID: 561182335}
   isBroom: 0
   isBadge: 0
   isStool: 0
@@ -11685,10 +11685,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 349474911}
-  selectedCommands:
-  - {fileID: 349474929}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -12286,7 +12284,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &349474929
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12303,7 +12301,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &349474930
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12321,7 +12319,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &349474931
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
