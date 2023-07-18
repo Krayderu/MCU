@@ -137,5 +137,10 @@ public class PauseMenu : MonoBehaviour
         animator.enabled = true;
     }
 
+    void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
 
