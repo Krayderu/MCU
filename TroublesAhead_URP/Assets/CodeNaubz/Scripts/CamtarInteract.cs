@@ -14,8 +14,6 @@ public class CamtarInteract : InteractObject
 
         base.Start();
 
-        flowchart.ExecuteBlock("Step0");
-
         playerController.controller = playerController.GetComponent<CharacterController>();
 
         playerController.controller.enabled = false;
@@ -23,6 +21,8 @@ public class CamtarInteract : InteractObject
         playerController.footstep = playerController.GetComponent<AudioSource>();
 
         playerController.footstep.enabled = false;
+
+        flowchart.ExecuteBlock("Step0");
 
 
     }
