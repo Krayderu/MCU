@@ -7,6 +7,12 @@ public class AutomaticDoor : MonoBehaviour
 
     public Animator animator;
     public float maxTime = 3;
+    private AudioSource audioPorte;
+
+    private void Start()
+    {
+        audioPorte = GetComponent<AudioSource>();
+    }
 
 
     private void OnTriggerEnter(Collider other)
@@ -15,6 +21,7 @@ public class AutomaticDoor : MonoBehaviour
         {
             Debug.Log("entred");
             animator.SetBool("isOpen", true);
+            audioPorte.Play();
             StartCoroutine(CloseAfterTime(maxTime));
         }
         
@@ -25,6 +32,7 @@ public class AutomaticDoor : MonoBehaviour
     {
         yield return new WaitForSeconds(maxTime);
         animator.SetBool("isOpen", false);
+        audioPorte.Play();
         yield return null;
     }
 
