@@ -11486,6 +11486,7 @@ GameObject:
   - component: {fileID: 349474924}
   - component: {fileID: 349474926}
   - component: {fileID: 349474927}
+  - component: {fileID: 349474928}
   m_Layer: 0
   m_Name: Flowchart_Camtar
   m_TagString: Untagged
@@ -11949,6 +11950,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 349474908}
+  - {fileID: 349474928}
   - {fileID: 349474907}
   - {fileID: 349474906}
   - {fileID: 349474905}
@@ -12249,6 +12251,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 87
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: b7730ec76967df24babadbb5c13f8c67, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &349474928
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349474891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: b7730ec76967df24babadbb5c13f8c67, type: 3}
   volume: 1

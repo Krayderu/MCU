@@ -15,6 +15,10 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject stoolUI;
 
+    public GameObject creditUI;
+
+    private Animator animator;
+
     public bool isBroom = false;
 
     public bool isBadge = false;
@@ -24,6 +28,13 @@ public class PauseMenu : MonoBehaviour
     public bool isTexting = false;
 
     [SerializeField] private FocusMode focusMode;
+
+    private void Start()
+    {
+        animator = creditUI.GetComponent<Animator>();
+    }
+
+
 
     // Update is called once per frame
     void Update()
@@ -118,6 +129,12 @@ public class PauseMenu : MonoBehaviour
             isStool = true;
         }
 
+    }
+
+    void CallCredit()
+    {
+        creditUI.SetActive(true);
+        animator.enabled = true;
     }
 
 }
