@@ -41,8 +41,8 @@ Material:
     - _HorizonBlend: 38.3
     - _NadirBlend: 50
     - _StarHeiht: 819.9
-    - _StarIntensity: 221.8
-    - _StarPower: 51.6
+    - _StarIntensity: 91.5
+    - _StarPower: 59.4
     - _ZenithBlend: 1.1
     m_Colors:
     - _GroundColor: {r: 0.15094337, g: 0.03631185, b: 0.03891708, a: 0}
