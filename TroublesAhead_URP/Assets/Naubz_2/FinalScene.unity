@@ -4380,6 +4380,9 @@ GameObject:
   - component: {fileID: 157267477}
   - component: {fileID: 157267479}
   - component: {fileID: 157267478}
+  - component: {fileID: 157267482}
+  - component: {fileID: 157267481}
+  - component: {fileID: 157267480}
   m_Layer: 0
   m_Name: Flowchart_Janitor
   m_TagString: Untagged
@@ -4400,7 +4403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -28.360626, y: 45.51822}
+  scrollPos: {x: -30.834848, y: 44.745026}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -4411,7 +4414,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 157267479}
   selectedCommands: []
   variables: []
   description: 
@@ -5107,8 +5111,62 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 157267482}
   - {fileID: 157267478}
+  - {fileID: 157267481}
+  - {fileID: 157267480}
   suppressAllAutoSelections: 0
+--- !u!114 &157267480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157267449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  targetObject: {fileID: 55172039}
+  methodName: TextOff
+  delay: 0
+--- !u!114 &157267481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157267449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 94
+  indentLevel: 0
+  targetObject: {fileID: 2087557666}
+  methodName: DisableFocusMode
+  delay: 0
+--- !u!114 &157267482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157267449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 93
+  indentLevel: 0
+  targetObject: {fileID: 55172039}
+  methodName: TextOn
+  delay: 0
 --- !u!1001 &157902659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39810,8 +39868,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.72046024}
-  m_Center: {x: 0, y: 0, z: 0.13976987}
+  m_Size: {x: 1.5629245, y: 1.1191676, z: 2.359458}
+  m_Center: {x: -0.2814581, y: -0.05958363, z: 0.87480074}
 --- !u!4 &968676508
 Transform:
   m_ObjectHideFlags: 0
@@ -39819,14 +39877,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968676506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.881, y: 17.211, z: -44.626}
+  m_LocalRotation: {x: -0, y: 0.103799365, z: -0, w: 0.99459827}
+  m_LocalPosition: {x: 2.92, y: 17.211, z: -44.43}
   m_LocalScale: {x: 1, y: 4.0679, z: 3.443}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 123
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 11.916, z: 0}
 --- !u!1001 &969562281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48927,7 +48985,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ef10b5a90ce035c4f921ca028b6191dd,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 123
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef10b5a90ce035c4f921ca028b6191dd, type: 3}
@@ -49208,8 +49266,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8584906, g: 0.47931224, b: 0.2794144, a: 1}
-  m_Intensity: 1.06
-  m_Range: 25.77
+  m_Intensity: 1
+  m_Range: 0.91
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -49250,7 +49308,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 12.03
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -63186,8 +63244,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.72046024}
-  m_Center: {x: 0, y: 0, z: 0.13976987}
+  m_Size: {x: 1.5397605, y: 1.1940302, z: 2.3192317}
+  m_Center: {x: -0.5117243, y: -0.0970136, z: 0.93915564}
 --- !u!4 &1585304193
 Transform:
   m_ObjectHideFlags: 0
@@ -71515,7 +71573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2036799461}
+  selectedFlowchart: {fileID: 157267450}
 --- !u!4 &1954499571
 Transform:
   m_ObjectHideFlags: 1
@@ -73269,6 +73327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512591836342725211, guid: 94fb2125b781272498a2e5462e3a82b7,
+        type: 3}
+      propertyPath: m_Looping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1522480200044383169, guid: 94fb2125b781272498a2e5462e3a82b7,
         type: 3}
@@ -83184,7 +83247,7 @@ GameObject:
   - component: {fileID: 3423269164475893767}
   - component: {fileID: 494769573354602988}
   - component: {fileID: 3423269164475893768}
-  m_Layer: 19
+  m_Layer: 21
   m_Name: Main_Door_East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83359,7 +83422,7 @@ GameObject:
   - component: {fileID: 4397188956829730086}
   - component: {fileID: 5316833189665342085}
   - component: {fileID: 5316833189665342086}
-  m_Layer: 19
+  m_Layer: 21
   m_Name: Main_Door_West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
