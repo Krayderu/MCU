@@ -19,6 +19,10 @@ public class PauseMenu : MonoBehaviour
 
     private Animator animator;
 
+    public GameObject hintUI;
+
+    private Animator animatorHint;
+
     public bool isBroom = false;
 
     public bool isBadge = false;
@@ -32,6 +36,8 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         animator = creditUI.GetComponent<Animator>();
+
+        animatorHint = hintUI.GetComponent<Animator>();
     }
 
 
@@ -135,6 +141,12 @@ public class PauseMenu : MonoBehaviour
     {
         creditUI.SetActive(true);
         animator.enabled = true;
+    }
+
+    void CallHint()
+    {
+        hintUI.SetActive(true);
+        animatorHint.enabled = true;
     }
 
     void LoadMenu()
