@@ -6,9 +6,15 @@ public class AudioController : MonoBehaviour
 {
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private float fadeDuration = 1f;
+    private AudioSource audioJingle;
 
     private bool isInside = false;
     private Coroutine currentFadeCoroutine;
+
+    private void Start()
+    {
+        audioJingle = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +22,7 @@ public class AudioController : MonoBehaviour
         {
             Debug.Log("change music");
             ToggleAudio();
+            audioJingle.Play();
         }
 
 
