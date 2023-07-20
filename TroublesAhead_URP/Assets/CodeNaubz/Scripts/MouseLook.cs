@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseLook : MonoBehaviour
 {
+    [SerializeField] SensitivitySlider slider;
 
     public float mouseSensitivity = 100f;
 
@@ -11,6 +13,20 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
+    public void Start()
+    {
+        if (PlayerPrefs.HasKey("sensitivity"))
+        {
+            mouseSensitivity = PlayerPrefs.GetFloat("sensitivity");
+        }
+        slider.OnSensitivityChange += OnSensitivityChange;
+    }
+
+    public void OnSensitivityChange()
+    {
+       mouseSensitivity = PlayerPrefs.GetFloat("sensitivity");
+   
+    }
 
     public void CameraRotation()
     {
