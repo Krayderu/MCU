@@ -31920,7 +31920,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 524288
-  step: 10
+  step: 0
   janitorFound: 0
 --- !u!82 &503990740
 AudioSource:
@@ -52013,7 +52013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 228.71866, y: 75.80922}
+  scrollPos: {x: 350.36758, y: 67.56179}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 512
@@ -52024,8 +52024,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1053117945}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -75881,7 +75880,7 @@ Transform:
   m_GameObject: {fileID: 1625315931}
   m_LocalRotation: {x: -0, y: -0.0000029504295, z: 0, w: 1}
   m_LocalPosition: {x: 7.5559053, y: 4.1200004, z: 16.06404}
-  m_LocalScale: {x: 1.5568, y: 0.06199136, z: 1.5568}
+  m_LocalScale: {x: 2.079729, y: 0.05263591, z: 2.079729}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1418412782}
@@ -85393,7 +85392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 938399886}
+  selectedFlowchart: {fileID: 1053117877}
 --- !u!4 &1954499571
 Transform:
   m_ObjectHideFlags: 1
