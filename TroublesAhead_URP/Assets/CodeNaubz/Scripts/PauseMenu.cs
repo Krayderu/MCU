@@ -23,6 +23,8 @@ public class PauseMenu : MonoBehaviour
 
     private Animator animatorHint;
 
+    public bool isHint = false;
+
     public bool isBroom = false;
 
     public bool isBadge = false;
@@ -145,8 +147,20 @@ public class PauseMenu : MonoBehaviour
 
     void CallHint()
     {
-        hintUI.SetActive(true);
-        animatorHint.enabled = true;
+        if (isHint)
+        {
+            hintUI.SetActive(false);
+            animatorHint.enabled = false;
+            isHint = false;
+        }
+        else
+        {
+            hintUI.SetActive(true);
+            animatorHint.enabled = true;
+            isHint = true;
+        }
+
+
     }
 
     void LoadMenu()
