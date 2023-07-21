@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
-    AudioMixer mixer;
+    [SerializeField]AudioMixer mixer;
 
     public void Start()
     {
