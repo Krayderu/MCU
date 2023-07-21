@@ -12,7 +12,6 @@ public class CaissierInteract : InteractObject
     public override void Start()
     {
         base.Start();
-
     }
 
     public override void Interact()
@@ -22,23 +21,24 @@ public class CaissierInteract : InteractObject
         base.Interact();
 
         focusMode.EnableFocusMode();
-
-        if(playerController.step == 0)
+        #region StorySteps
+        if (playerController.step == 0 && playerController.hintStep != 1)
         {
             flowchart.ExecuteBlock("Step0");
         }
+
 
         if (playerController.step == 1)
         {
             flowchart.ExecuteBlock("Step1");
         }
 
-        if(playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == false)
+        if(playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == false) // ICI
         {
             flowchart.ExecuteBlock("Step2");
         }
 
-        if (playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == true)
+        if (playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == true) // ICI
         {
             flowchart.ExecuteBlock("Step3");
         }
@@ -52,13 +52,43 @@ public class CaissierInteract : InteractObject
         {
             flowchart.ExecuteBlock("Step5");
         }
+        #endregion
+        #region HintSteps
+        if (playerController.step == 0 && playerController.hintStep == 1)
+        {
+            GetHint();
+        }
 
+        if (playerController.step == 2 && playerController.hintStep == 2)
+        {
+            GetHint();
+        }
+
+        if (playerController.step == 6 && playerController.hintStep == 4)
+        {
+            GetHint();
+        }
+
+        if (playerController.step == 6 && playerController.hintStep == 5)
+        {
+            GetHint();
+        }
+        #endregion
     }
 
 
     public void NextStep()
     {
         playerController.step += 1;
+    }
+
+    public void NextHint()
+    {
+        playerController.hintStep += 1;
+    }
+    public void GetHint()
+    {
+        flowchart.ExecuteBlock("Hint" + playerController.hintStep);
     }
 
     

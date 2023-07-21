@@ -23,7 +23,10 @@ public class BoitierLevierInteract : StepInteractObject
 
         audioLever.Play();
 
-        playerController.step = 3;
+        if (playerController.step == 2)
+        {
+            playerController.step = 3;
+        }
 
         ExitFocus();
 

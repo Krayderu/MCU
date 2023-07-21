@@ -20,7 +20,7 @@ public class JanitorInteract : StepInteractObject
     public override void StepInteract()
     {
         focusMode.EnableFocusMode();
-
+        #region StoryStep
         if (playerController.step == 4)
         {
             flowchart.ExecuteBlock("Step0");
@@ -37,13 +37,33 @@ public class JanitorInteract : StepInteractObject
             flowchart.ExecuteBlock("Step2");
         }
 
-        if (playerController.step > 5 && playerController.step < 8)
+        if (playerController.step > 5 && playerController.step < 8 && playerController.hintStep <5)
         {
             flowchart.ExecuteBlock("Step1");
         }
+        #endregion
+
+        #region HintStep
+        if (playerController.step == 5 && playerController.hintStep == 3)
+        {
+            GetHint();
+        }
+
+        if (playerController.step == 6 && playerController.hintStep == 5)
+        {
+            GetHint();
+        }
+        #endregion
 
 
         playerController.janitorFound = true;
+
+
+    }
+
+    public void GetHint()
+    {
+        flowchart.ExecuteBlock("Hint" + playerController.hintStep);
     }
 
 }
