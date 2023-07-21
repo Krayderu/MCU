@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject badgeUI;
 
+    public GameObject lighterUI;
+
     public GameObject broomUI;
 
     public GameObject stoolUI;
@@ -22,6 +24,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject hintUI;
 
     private Animator animatorHint;
+
+    public bool isLighter = false;
 
     public bool isHint = false;
 
@@ -135,6 +139,21 @@ public class PauseMenu : MonoBehaviour
         {
             stoolUI.SetActive(true);
             isStool = true;
+        }
+
+    }
+
+    void CallLighter()
+    {
+        if (isLighter)
+        {
+            lighterUI.SetActive(false);
+            isLighter = false;
+        }
+        else
+        {
+            lighterUI.SetActive(true);
+            isLighter = true;
         }
 
     }
