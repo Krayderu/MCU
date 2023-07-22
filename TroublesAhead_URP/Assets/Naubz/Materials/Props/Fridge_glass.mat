@@ -195,7 +195,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AdvancedTab: 1
+    - _AdvancedTab: 0
     - _AlbedoMapIntensity: 1
     - _AlphaClipping: 0
     - _AlphaCutoff: 0.5
@@ -270,8 +270,8 @@ Material:
     - _RefractionDistortion: 0.1
     - _RefractionDistortionFade: 0.834
     - _RefractionDistortionMapScale: 1
-    - _RefractionTab: 1
-    - _RenderFace: 2
+    - _RefractionTab: 0
+    - _RenderFace: 0
     - _RenderPriority: 0
     - _Rim: 0
     - _RimSize: 1
@@ -296,7 +296,7 @@ Material:
     - _StencilRef: 0
     - _StencilWriteMask: 255
     - _StencilZFail: 0
-    - _StylizeTab: 1
+    - _StylizeTab: 0
     - _Surface: 1
     - _ThresholdMapScale: 1
     - _UVSec: 0

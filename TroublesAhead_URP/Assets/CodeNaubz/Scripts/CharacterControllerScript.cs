@@ -34,6 +34,7 @@ public class CharacterControllerScript : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         playerCamera = Camera.main;
         MouseLook cameraScript = mainCamera.GetComponent<MouseLook>();
     }
