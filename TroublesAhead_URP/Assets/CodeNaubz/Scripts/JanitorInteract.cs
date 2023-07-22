@@ -27,12 +27,12 @@ public class JanitorInteract : StepInteractObject
            
         }
 
-        if(playerController.step == 5)
+        if(playerController.step == 5 && playerController.hintStep !=3)
         {
             flowchart.ExecuteBlock("Step0.5");
         }
 
-        if (playerController.step >= 8)
+        if (playerController.step >= 8 && playerController.hintStep >=5)
         {
             flowchart.ExecuteBlock("Step2");
         }
@@ -54,11 +54,6 @@ public class JanitorInteract : StepInteractObject
             GetHint();
         }
         #endregion
-
-
-        playerController.janitorFound = true;
-
-
     }
 
     public void GetHint()

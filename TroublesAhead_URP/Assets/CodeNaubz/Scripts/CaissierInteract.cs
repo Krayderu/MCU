@@ -33,16 +33,6 @@ public class CaissierInteract : InteractObject
             flowchart.ExecuteBlock("Step1");
         }
 
-        if(playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == false) // ICI
-        {
-            flowchart.ExecuteBlock("Step2");
-        }
-
-        if (playerController.step > 1 && playerController.step < 10 && playerController.janitorFound == true) // ICI
-        {
-            flowchart.ExecuteBlock("Step3");
-        }
-
         if(playerController.step == 10)
         {
             flowchart.ExecuteBlock("Step4");
@@ -52,8 +42,11 @@ public class CaissierInteract : InteractObject
         {
             flowchart.ExecuteBlock("Step5");
         }
+
+
         #endregion
         #region HintSteps
+
         if (playerController.step == 0 && playerController.hintStep == 1)
         {
             GetHint();
@@ -73,6 +66,22 @@ public class CaissierInteract : InteractObject
         {
             GetHint();
         }
+
+        if (playerController.step == 7 && playerController.hintStep == 5)
+        {
+            flowchart.ExecuteBlock("WCDoor");
+        }
+
+        if (playerController.step == 5 && playerController.hintStep <= 3) 
+        {
+            flowchart.ExecuteBlock("Hint3");
+        }
+
+
+        if (playerController.step >=8 && playerController.step <10)
+        {
+            flowchart.ExecuteBlock("RoofHint");
+        }
         #endregion
     }
 
@@ -86,11 +95,25 @@ public class CaissierInteract : InteractObject
     {
         playerController.hintStep += 1;
     }
-    public void GetHint()
+
+    public void SynchroLighter()
     {
-        flowchart.ExecuteBlock("Hint" + playerController.hintStep);
+        playerController.hintStep = 1;
     }
 
-    
+    public void SynchroDumpster()
+    {
+        playerController.hintStep = 4;
+    }
+    public void SynchroPoster()
+    {
+        playerController.hintStep = 5;
+    }
+    public void GetHint()
+    {
+         flowchart.ExecuteIfHasBlock("Hint" + playerController.hintStep); 
+    }
+
+
 
 }

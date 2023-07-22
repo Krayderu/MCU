@@ -33,6 +33,7 @@ public class AtomicAleAdInteract : StepInteractObject
         if(playerController.step == 6)
         {
             playerController.step = 7;
+            playerController.hintStep = 5;
         }
 
         minimumStep = 0;

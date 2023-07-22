@@ -25,7 +25,6 @@ public class CharacterControllerScript : MonoBehaviour
 
     // Step for the Storyline
     public int step = 0;
-    public bool janitorFound = false;
     public int hintStep = 0;
 
     // private float rotationX = 0f;
