@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.Audio;
 
 public class CaissierInteract : InteractObject
 {
 
     public Flowchart flowchart;
     [SerializeField] private FocusMode focusMode;
+    [SerializeField] AudioSource audioAvance;
+    [SerializeField] AudioSource audioRecule;
+    [SerializeField] AudioSource audioPorteBR;
 
     public override void Start()
     {
@@ -122,6 +126,21 @@ public class CaissierInteract : InteractObject
     public void GetHint()
     {
          flowchart.ExecuteIfHasBlock("Hint" + playerController.hintStep); 
+    }
+
+    public void CallAvance()
+    {
+        audioAvance.Play();
+    }
+
+    public void CallRecule()
+    {
+        audioRecule.Play();
+    }
+
+    public void CallPorte()
+    {
+        audioPorteBR.Play();
     }
 
 

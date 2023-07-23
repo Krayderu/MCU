@@ -44,6 +44,26 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    public void ToggleOutro()
+    {
+        fadeDuration = 4f;
+
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+            currentFadeCoroutine = StartCoroutine(CrossfadeAudio("OutroVolume", "MusicVolume"));
+    }
+
+    public void ToggleSFX()
+    {
+        fadeDuration = 4f;
+
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+            currentFadeCoroutine = StartCoroutine(CrossfadeSfx("SFXVolume"));
+    }
+
     private IEnumerator CrossfadeAudio(string fadeInSource, string fadeOutSource)
     {
         float timeElapsed = 0f;
@@ -60,6 +80,25 @@ public class AudioController : MonoBehaviour
         }
 
         audioMixer.SetFloat(fadeInSource, 0f);
+        audioMixer.SetFloat(fadeOutSource, -80f);
+
+        currentFadeCoroutine = null;
+    }
+
+    private IEnumerator CrossfadeSfx(string fadeOutSource)
+    {
+        float timeElapsed = 0f;
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float normalizedTime = timeElapsed / fadeDuration;
+
+            audioMixer.SetFloat(fadeOutSource, Mathf.Lerp(0f, -80f, normalizedTime));
+
+            yield return null;
+        }
+
         audioMixer.SetFloat(fadeOutSource, -80f);
 
         currentFadeCoroutine = null;
