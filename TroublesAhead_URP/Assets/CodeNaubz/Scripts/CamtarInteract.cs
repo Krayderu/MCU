@@ -50,10 +50,10 @@ public class CamtarInteract : InteractObject
 
         playerController.controller.enabled = false;
 
-        player.transform.position = new Vector3(-14.6f, 1.5f, -28.05f);
+        player.transform.position = new Vector3(-14.6f, 1.5f, -27.9f);
 
         player.transform.eulerAngles = new Vector3(0f, 90f, 0f);
-        // Camera.main.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        Camera.main.transform.eulerAngles = new Vector3(0f, 90f, 0f);
     }
 
     public void ExitCamtar()
@@ -64,5 +64,11 @@ public class CamtarInteract : InteractObject
 
         player.transform.position = new Vector3(-14.78f, 1.68f, -23.84f);
 
+    }
+
+    public void HideCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

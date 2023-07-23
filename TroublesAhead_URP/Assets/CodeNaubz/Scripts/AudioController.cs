@@ -46,7 +46,7 @@ public class AudioController : MonoBehaviour
 
     public void ToggleOutro()
     {
-        fadeDuration = 4f;
+        fadeDuration = 2f;
 
         if (currentFadeCoroutine != null)
             StopCoroutine(currentFadeCoroutine);

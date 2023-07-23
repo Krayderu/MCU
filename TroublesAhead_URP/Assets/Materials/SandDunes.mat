@@ -54,19 +54,19 @@ Material:
     - _GrainColorBlend: -2.85
     - _GrainShine: 0.35
     - _Grainperiod: 407.3
-    - _NormalStrength: 0.45
+    - _NormalStrength: 0
     - _PolygonSides: 3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShineThreshold: 1
     - _SineAmplitude: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SubstrateDuneMaxheight: 0.589
     - _SubstrateGrainHeightMax: 0.253
     - _SubstrateTightening: 0.67
     - _sineFrequency: 0.86
     - _sineRotation: 0.46
-    - _uvScale: 79.78
+    - _uvScale: 79.93
     m_Colors:
     - _SandHighColor: {r: 0.37486652, g: 0.4868219, b: 0.6792453, a: 0}
     - _SandLowColor: {r: 0.45296368, g: 0.5734469, b: 0.8207547, a: 1}
