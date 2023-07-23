@@ -53,6 +53,11 @@ public class JanitorInteract : StepInteractObject
         {
             GetHint();
         }
+
+        if (playerController.step == 7 && playerController.hintStep == 5)
+        {
+            GetHint();
+        }
         #endregion
     }
 

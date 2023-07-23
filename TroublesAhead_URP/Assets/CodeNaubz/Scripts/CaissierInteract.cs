@@ -57,6 +57,16 @@ public class CaissierInteract : InteractObject
             GetHint();
         }
 
+        if (playerController.step == 3 && playerController.hintStep == 2)
+        {
+            flowchart.ExecuteBlock("DevComment");
+        }
+
+        if (playerController.step == 4 && playerController.hintStep == 2)
+        {
+            GetHint();
+        }
+
         if (playerController.step == 6 && playerController.hintStep == 4)
         {
             GetHint();
