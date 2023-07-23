@@ -46,7 +46,6 @@ public class LevierInteract : StepInteractObject
 
     public void ChangeLight()
     {
-
         mat[0] = newMaterial;
         rlRenderer.materials = mat;
         redLight.enabled = false;
