@@ -24,5 +24,6 @@ public class BroomInteract : StepInteractObject
         {
             playerController.step = 8;
         }
+        minimumStep = 50;
     }
 }
